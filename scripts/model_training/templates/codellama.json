@@ -1,0 +1,6 @@
+{
+    "description": "code llama prompt format",
+    "prompt_input": "<s>[INST] <<SYS>>\n{instruction} You should think step by step but only need to tell me your predicted function name.\n<</SYS>>\n\n{input}[/INST]",
+    "prompt_no_input": "<s>[INST] <<SYS>>\n{instruction}\n<</SYS>>\n[/INST]",
+    "response_split": "[/INST]"    
+}

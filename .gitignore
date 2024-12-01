@@ -1,0 +1,9 @@
+binaries/
+conda_envs/
+data/
+dataset/
+!dataset/sample_training_set.json
+!dataset/sample_test_set.json
+ghidra_10.4_PUBLIC/
+scripts/decompilation/ghidra_project/
+source_code/
