@@ -1,7 +1,7 @@
 # Beyond Classification: Inferring Function Names in Stripped Binaries via Domain Adapted LLMs
 This repository contains the code implementation of paper [Beyond Classification: Inferring Function Names in Stripped Binaries via Domain Adapted LLMs]().
 
-We implemented BinSymn using [Ghidra](https://ghidra-sre.org/) (for decompilation), [ANTLR 4](https://www.antlr.org/) (for processing source code and decompiled code). 
+We implemented SymGen using [Ghidra](https://ghidra-sre.org/) (for decompilation), [ANTLR 4](https://www.antlr.org/) (for processing source code and decompiled code). 
 The model's fine-tuning and prediction are based on [alpaca-lora](https://github.com/tloen/alpaca-lora/tree/main).
 For more details, please refer to our paper.
 
@@ -12,12 +12,12 @@ For more details, please refer to our paper.
 ## Environment Setup
 1. Create new conda enviroment
     ```bash
-    conda create -n binsymn python=3.9
+    conda create -n symgen python=3.9
     ```
 
 2. Activate the conda environment
     ```bash
-    conda activate binsymn
+    conda activate symgen
     ```
 
 3. Install packages
@@ -31,7 +31,7 @@ For more details, please refer to our paper.
 
 
 ## Dataset
-The original binaries and the decompiled code used by BinSymn can be downloaded [here](https://zenodo.org/records/14252147).
+The original binaries and the decompiled code used by SymGen can be downloaded [here](https://zenodo.org/records/14252147).
 
 The uploaded package follows a three-level directory structure, organized as shown below:
 ```
