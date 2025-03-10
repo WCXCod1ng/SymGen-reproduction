@@ -13,7 +13,7 @@ lines = []
 lastLine = 0
 lastOffset = 0
 
-class ReplaceVariableTypeVisitor(CVisitor):
+class MaskFunctionNameVisitor(CVisitor):
     def visitFunctionDefinition(self, ctx:CParser.FunctionDefinitionContext):
         if ctx.declarator() is not None:
             if ctx.declarator().directDeclarator() is not None:
@@ -80,7 +80,7 @@ def process_dataset(unstripped_path, stripped_path, output_dir):
                     parser = CParser(stream)
                     tree = parser.compilationUnit()
 
-                    visitor = ReplaceVariableTypeVisitor()
+                    visitor = MaskFunctionNameVisitor()
                     visitor.visit(tree)
 
                     res = ""
@@ -116,7 +116,7 @@ def process_dataset(unstripped_path, stripped_path, output_dir):
                     parser = CParser(stream)
                     tree = parser.compilationUnit()
 
-                    visitor = ReplaceVariableTypeVisitor()
+                    visitor = MaskFunctionNameVisitor()
                     visitor.visit(tree)
 
                     res = ""
@@ -179,7 +179,7 @@ def process_binaries_for_prediction(stripped_path, output_dir):
                     parser = CParser(stream)
                     tree = parser.compilationUnit()
 
-                    visitor = ReplaceVariableTypeVisitor()
+                    visitor = MaskFunctionNameVisitor()
                     visitor.visit(tree)
 
                     res = ""
