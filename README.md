@@ -28,6 +28,9 @@ For more details, please refer to our paper.
 4. Install Ghidra
 
     The Ghidra installation guide can be found [here](https://htmlpreview.github.io/?https://github.com/NationalSecurityAgency/ghidra/blob/stable/GhidraDocs/InstallationGuide.html).
+   1. 安装Ghidra11.3，并配置`GHIDRA_INSTALL_DIR`环境变量
+   2. 通过`pip install pyghidra`安装Python的Ghidra包
+   3. 通过`pip install ghidra-stubs==11.3`安装Ghidra类型辅助包（防止IDE报错）
 
 
 ## Dataset

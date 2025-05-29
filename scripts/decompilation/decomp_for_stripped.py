@@ -2,10 +2,11 @@ import os
 import json
 from ghidra.app.decompiler import DecompInterface
 from ghidra.util.task import ConsoleTaskMonitor
+from ghidra.ghidra_builtins import *
 
 file_path = str(getProgramFile())
 print("1. load the binary file: ", file_path)
-output_dir = ""
+output_dir = "/root/code/SymGen/decompiled/stripped"
 assert (
     output_dir
 ), "Please provide the dir to save the results in 'decompilation/decom_for_stripped.py'"
@@ -46,7 +47,7 @@ def get_data_type_info(f, var, is_arg, count):
             is_union = True
 
     try:
-        type_object.getCount()
+        type_object.getCount() # 通过getCount判断是否为枚举类型，但在剥离符号的二进制中通常不可用，此检查可能始终返回False
         is_enum = True
     except:
         is_enum = False
@@ -63,7 +64,7 @@ def get_data_type_info(f, var, is_arg, count):
 
     if is_arg:
         # need to store the register the args are saved into.
-        f[varname]['register'] = var.getRegister().getName()
+        f[varname]['register'] = var.getRegister().getName() # 此时的参数名称是Ghidra自动生成的，例如param_1
         f[varname]['count'] = count
 
     return f
@@ -113,7 +114,7 @@ while function is not None:
     decomp = ifc.decompileFunction(function, 60, ConsoleTaskMonitor())
     decompiled_function = decomp.getDecompiledFunction().getC()
 
-    res[str(function.getEntryPoint())] = {
+    res[str(function.getEntryPoint())] = { # 函数的key（也即唯一标识现在使用入口地址了，而非函数名，这是因为剥离符号的二进制中函数名通常为FUN_XXX形式）
         "assembly": assembly,
         "decomp_code": decompiled_function,
         "variable_metadata": var_metadata,
@@ -122,7 +123,7 @@ while function is not None:
             'start': str(function.getEntryPoint()),
             'end': str(function.getBody().getMaxAddress()),
         },
-        "func_name": funcname
+        "func_name": funcname # 实际上没有特别含义，而是FUN_xxxx形式
     }
 
     function = getFunctionAfter(function)
