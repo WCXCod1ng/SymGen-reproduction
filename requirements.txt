@@ -15,3 +15,4 @@ protobuf
 nltk
 pyghidra==2.1.0
 ghidra-stubs==11.3
+openai==1.82.1

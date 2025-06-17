@@ -6,7 +6,7 @@ from ghidra.ghidra_builtins import *
 
 file_path = str(getProgramFile())
 print("1. load the binary file: ", file_path)
-output_dir = "/root/code/SymGen/decompiled/stripped"
+output_dir = r"D:\document\python\research\SymGen-reproduction\decompiled\stripped"
 assert (
     output_dir
 ), "Please provide the dir to save the results in 'decompilation/decom_for_stripped.py'"

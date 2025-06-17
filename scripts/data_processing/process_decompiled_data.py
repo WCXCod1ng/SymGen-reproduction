@@ -49,7 +49,8 @@ def process_dataset(unstripped_path, stripped_path, output_dir):
             for function_name in unstripped_data.keys():
                 function = unstripped_data[function_name]
                 start_address = function["function_address"]["start"]
-                stripped_function = stripped_data[start_address]
+                # stripped_function = stripped_data[start_address]
+                stripped_function = stripped_data.get(start_address, None)
 
                 pair = {}
 
@@ -62,16 +63,16 @@ def process_dataset(unstripped_path, stripped_path, output_dir):
                     if len(function["assembly"]) > 510 or len(function["assembly"]) < 5:
                         continue
 
-                    file = open('code.txt', 'w') # tmpfile
+                    file = open('code.txt', 'w', encoding='utf-8') # tmpfile
                     file.write(code)
                     file.close()
 
-                    file = open('code.txt', 'r')
+                    file = open('code.txt', 'r', encoding='utf-8')
                     code = file.read()
                     antlrInput = InputStream(code)
                     file.close()
 
-                    file = open('code.txt', 'r')
+                    file = open('code.txt', 'r', encoding='utf-8')
                     lines = file.readlines()
                     file.close()
 
@@ -98,16 +99,16 @@ def process_dataset(unstripped_path, stripped_path, output_dir):
                     # if len(function["assembly"]) > 510 or len(function["assembly"]) < 5:
                     #     continue
 
-                    file = open('code.txt', 'w')
+                    file = open('code.txt', 'w', encoding='utf-8')  # tmpfile
                     file.write(stripped_code)
                     file.close()
 
-                    file = open('code.txt', 'r')
+                    file = open('code.txt', 'r', encoding='utf-8')
                     code = file.read()
                     antlrInput = InputStream(code)
                     file.close()
 
-                    file = open('code.txt', 'r')
+                    file = open('code.txt', 'r', encoding='utf-8')
                     lines = file.readlines()
                     file.close()
 
@@ -159,16 +160,16 @@ def process_binaries_for_prediction(stripped_path, output_dir):
                 if function is not None:
                     code = function["decomp_code"]
 
-                    file = open('code.txt', 'w')
+                    file = open('code.txt', 'w', encoding='utf-8')  # tmpfile
                     file.write(code)
                     file.close()
 
-                    file = open('code.txt', 'r')
+                    file = open('code.txt', 'r', encoding='utf-8')
                     code = file.read()
                     antlrInput = InputStream(code)
                     file.close()
 
-                    file = open('code.txt', 'r')
+                    file = open('code.txt', 'r', encoding='utf-8')
                     lines = file.readlines()
                     file.close()
 
