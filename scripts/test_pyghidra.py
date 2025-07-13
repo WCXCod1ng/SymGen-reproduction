@@ -156,16 +156,32 @@ def analyze(path: str):
 
 def analyze_stripped(path: str):
     try:
-        with pyghidra.open_program(path, project_location="/tmp/ghidra_project/TempProject", project_name="TempProject", analyze=False) as flat_api:
+        with pyghidra.open_program(path, project_location="/tmp/ghidra_project/TempProject", project_name="TempProject", analyze=True) as flat_api:
             program = flat_api.getCurrentProgram()
             flat_api.analyzeAll(program)
             dtm = program.getDataTypeManager()
             function_manager = program.getFunctionManager()
 
+            # 设置默认的起始地址为0
+            new_base_addr = flat_api.toAddr(0x0)
+            program.setImageBase(new_base_addr, True)
+
 
             # 获取默认地址空间，对于strip之后的二进制，不能根据函数名定位方法了，而是根据offset定位
             address_space = program.getAddressFactory().getDefaultAddressSpace()
             function = function_manager.getFunctionAt(address_space.getAddress(0x00101149))
+
+            # 打印汇编指令
+            for inst in program.getListing().getInstructions(function.getBody(), True):
+                print(inst.getAddress(), inst) # 打印对应的指令及地址
+
+            # 确定函数参数所存放的位置：
+            param_0 = function.getParameter(0)
+            if param_0.isRegisterVariable():
+                print(param_0.getRegister()) # 对于单个存储单元唯一，如果一个参数是存放在多个寄存器或其他位置的（compound），则返回第一个
+            elif param_0.isStaticVariable():
+                print(param_0.getStackOffset())
+
 
             # 先进行反编译将反编译的结果与Listing内容同步 update Listing via Decomp
             print("利用decomp更新前的函数签名：", function.getSignature())
