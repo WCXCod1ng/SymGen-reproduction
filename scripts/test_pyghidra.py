@@ -2,7 +2,6 @@ import pyghidra
 
 pyghidra.start() # 确保在一开始就启动，否则后续的ghidra包识别不到
 
-
 import os
 import shutil
 from ghidra.program.model.address import Address
@@ -21,11 +20,11 @@ from ghidra.base.project import GhidraProject
 from ghidra.util.task import TaskMonitor
 # from java.io import File
 
-
 so_path = '/root/code/hackaday-u/session-one/exercises/c1'
 so_path_stripped = '/root/code/hackaday-u/session-one/exercises/c1.stripped'
 so_path_complicate = '/root/code/hackaday-u/session-one/exercises/test'
-so_path_complicate_stripped = '/root/code/hackaday-u/session-one/exercises/test.stripped'
+# so_path_complicate_stripped = '/root/code/hackaday-u/session-one/exercises/test.stripped'
+so_path_complicate_stripped = r'D:\document\android-reverse\libs\libsentencepiece.so'
 
 # # 采用这种方式不会动态链接
 # project = GhidraProject.createProject("/tmp/ghidra_project", "TempProject", False)
@@ -34,6 +33,7 @@ so_path_complicate_stripped = '/root/code/hackaday-u/session-one/exercises/test.
 # flat_api = FlatProgramAPI(program)
 
 def update_func_by_decomp(function: FunctionDB, calling_convention: str, high_func: HighFunction, program: Program):
+    # note 可以通过如下的方式直接得到反编译分析的函数的参数和返回值分析结果（通过getStorage可以获得存储位置，可用于汇编代码）
     proto = high_func.getFunctionPrototype()
     return_type = proto.getReturnType()
     return_storage = proto.getReturnStorage() # 这也是关键（包括params部分的getStorage()，通过次可以实现让反编译的结果更新汇编内容，特别是栈变量/寄存器变量等）
@@ -69,6 +69,8 @@ def analyze(path: str):
             # 分析程序（包括反汇编）
             program = flat_api.getCurrentProgram()
             flat_api.analyzeAll(program)
+
+            flat_api.analysis_propertes()
 
             # 获取DataTypeManager
             dtm = program.getDataTypeManager()
@@ -156,9 +158,9 @@ def analyze(path: str):
 
 def analyze_stripped(path: str):
     try:
-        with pyghidra.open_program(path, project_location="/tmp/ghidra_project/TempProject", project_name="TempProject", analyze=True) as flat_api:
+        with pyghidra.open_program(path, project_location=r"D:\tmp\ghidra_project\TempProject", project_name="TempProject", analyze=True) as flat_api:
             program = flat_api.getCurrentProgram()
-            flat_api.analyzeAll(program)
+            # flat_api.analyzeAll(program)
             dtm = program.getDataTypeManager()
             function_manager = program.getFunctionManager()
 
@@ -169,18 +171,18 @@ def analyze_stripped(path: str):
 
             # 获取默认地址空间，对于strip之后的二进制，不能根据函数名定位方法了，而是根据offset定位
             address_space = program.getAddressFactory().getDefaultAddressSpace()
-            function = function_manager.getFunctionAt(address_space.getAddress(0x00101149))
+            function = function_manager.getFunctionAt(address_space.getAddress(0x1127bc))
 
             # 打印汇编指令
             for inst in program.getListing().getInstructions(function.getBody(), True):
                 print(inst.getAddress(), inst) # 打印对应的指令及地址
 
-            # 确定函数参数所存放的位置：
-            param_0 = function.getParameter(0)
-            if param_0.isRegisterVariable():
-                print(param_0.getRegister()) # 对于单个存储单元唯一，如果一个参数是存放在多个寄存器或其他位置的（compound），则返回第一个
-            elif param_0.isStaticVariable():
-                print(param_0.getStackOffset())
+            # # 确定函数参数所存放的位置：
+            # param_0 = function.getParameter(0)
+            # if param_0.isRegisterVariable():
+            #     print(param_0.getRegister()) # 对于单个存储单元唯一，如果一个参数是存放在多个寄存器或其他位置的（compound），则返回第一个
+            # elif param_0.isStaticVariable():
+            #     print(param_0.getStackOffset())
 
 
             # 先进行反编译将反编译的结果与Listing内容同步 update Listing via Decomp
@@ -220,7 +222,7 @@ def analyze_stripped(path: str):
 
 
     finally:
-        shutil.rmtree("/tmp/ghidra_project/TempProject")
+        shutil.rmtree(r"D:\tmp\ghidra_project\TempProject")
 
 # analyze(so_path)
 # analyze_stripped(so_path_stripped)

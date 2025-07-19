@@ -1,10 +1,13 @@
+# -*- coding: utf-8 -*-
+# note SymGen的这种方式也不能拿到和GUI分析中勾选全部选项时一样准确的参数信息（也就是说依然是默认的分析选项）
 import os
 import json
 from ghidra.app.decompiler import DecompInterface
 from ghidra.util.task import ConsoleTaskMonitor
-from ghidra.ghidra_builtins import *
 
-file_path = str(getProgramFile())
+# from ghidra.ghidra_builtins import getProgramFile, getCurrentProgram, toAddr, currentProgram, getFirstFunction, getFunctionAfter
+
+file_path = str(currentProgram)
 print("1. load the binary file: ", file_path)
 output_dir = r"D:\document\python\research\SymGen-reproduction\decompiled\stripped"
 assert (
@@ -25,10 +28,13 @@ def get_data_type_info(f, var, is_arg, count):
 
     # get to what ever the pointer is pointing to
     ptr_bool = False
-    for _ in range(type_name.count('*')):
-        type_object = type_object.getDataType()
-        type_name = type_object.getName()
-        ptr_bool = True
+    try:
+        for _ in range(type_name.count('*')):
+            type_object = type_object.getDataType()
+            type_name = type_object.getName()
+            ptr_bool = True
+    except AttributeError:
+        print(var)
 
     # if a typedef, get the primitive type definition
     try:
@@ -70,7 +76,7 @@ def get_data_type_info(f, var, is_arg, count):
     return f
 
 
-getCurrentProgram().setImageBase(toAddr(0), 0)
+currentProgram.setImageBase(toAddr(0), 0)
 ref = currentProgram.getReferenceManager()
 currentProgram = getCurrentProgram()
 listing = currentProgram.getListing()
@@ -111,8 +117,16 @@ while function is not None:
             args_metadata = get_data_type_info(args_metadata, arg, True, count)
             count += 1
 
-    decomp = ifc.decompileFunction(function, 60, ConsoleTaskMonitor())
-    decompiled_function = decomp.getDecompiledFunction().getC()
+    if str(function.getEntryPoint()) == '001127bc':
+        print("=================", args_metadata, function.getSignature())
+        exit(0)
+
+    try:
+        decomp = ifc.decompileFunction(function, 60, ConsoleTaskMonitor())
+        decompiled_function = decomp.getDecompiledFunction().getC()
+    except:
+        function = getFunctionAfter(function)
+        continue
 
     res[str(function.getEntryPoint())] = { # 函数的key（也即唯一标识现在使用入口地址了，而非函数名，这是因为剥离符号的二进制中函数名通常为FUN_XXX形式）
         "assembly": assembly,
