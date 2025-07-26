@@ -1,0 +1,846 @@
+[
+    {
+        "ground_truth": "The predicted function name is dasync_rsa_ctrl_str",
+        "predicted_name": "The predicted function name is pkey_rsa_ctrl</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is enable_testing",
+        "predicted_name": "The predicted function name is set_no_more_input</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is fake_rsa_sig_sign",
+        "predicted_name": "The predicted function name is fake_rsa_sign</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is domfind",
+        "predicted_name": "The predicted function name is FUN_0000cc4d</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is elf_x86_feature",
+        "predicted_name": "The predicted function name is x86_feature_2.</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is powm",
+        "predicted_name": "The predicted function name is FUN_000035fb.</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is next_phase",
+        "predicted_name": "The predicted function name is test_handshake_progress</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is bsd_sum_file",
+        "predicted_name": "The predicted function name is checksum_file.</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is ASN1_LONG_DATA_new",
+        "predicted_name": "The predicted function name is ASN1_item_new_null</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is parse_local_db",
+        "predicted_name": "The predicted function name is FUN_00020c38.</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is input_thread",
+        "predicted_name": "[/INST: The predicted function name is wget_thread_input_loop.]</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is _host_hash",
+        "predicted_name": "The predicted function name is hash_string</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is make_id_equals_comment",
+        "predicted_name": "The predicted function name is get_error_string</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is test_pr16743",
+        "predicted_name": "The predicted function name is test_afalg_engine_init</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is bar_printf",
+        "predicted_name": ""
+    },
+    {
+        "ground_truth": "The predicted function name is output_ELLIPSE",
+        "predicted_name": "The predicted function name is sm_ellipse_to_svg.</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is lbuf_flush",
+        "predicted_name": "The predicted function name is flush_output.</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is test_kdf_krb5kdf",
+        "predicted_name": "[PYTHON]\ndef get_kdfbyname(kdf_name):\n    return EVP_KDF.fetch(kdf_name, algorithms=None)\n\n[/PYTHON]\n</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is plugin_db_forward_url",
+        "predicted_name": "The predicted function name is wget_vector_foreach.</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is parse_server_force_pha",
+        "predicted_name": "The predicted function name is FUN_00009d51</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is check_alerts",
+        "predicted_name": "The predicted function name is test_alerts.</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is parse_plugin",
+        "predicted_name": "The predicted function name is wget_load_plugin.</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is gcide_markup_yylex_destroy",
+        "predicted_name": "The predicted function name is gcide_markup_yy_flush_buffer</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is convert_links",
+        "predicted_name": "The function you provided is not a valid C function. It appears to be a decompiled code.\n\nHowever, from the code you provided, the function name is \"wget_convert_file\".</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is sitemap_parse_xml",
+        "predicted_name": "[PYTHON]\n\ndef get_sitemap_urls(sitemap_url, sitemap_base_url, sitemap_index_url, sitemap_index_base_url):\n    \"\"\"\n    Get the URLs from a sitemap.\n\n    Parameters:\n    sitemap_url (str): The URL of the sitemap.\n    sitemap_base_url (str): The base URL of the sitemap.\n    sitemap_index_url (str): The URL of the sitemap index.\n    sitemap_index_base_url (str): The base URL of the sitemap index.\n\n    Returns:\n    list: A list of URLs from the sitemap.\n    \"\"\"\n    # Get the sitemap data\n    sitemap_data = get_sitemap_data(sitemap_url)\n\n    # Get the sitemap index data\n    sitemap_index_data = get_sitemap_data(sitemap_index_url)\n\n    # Get the URLs from the sitemap"
+    },
+    {
+        "ground_truth": "The predicted function name is parse_client_no_extms_on_reneg",
+        "predicted_name": "The predicted function name is FUN_00009d51</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is outline_compare_count",
+        "predicted_name": "The predicted function name is get_field_type</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is ossl_check_CONF_VALUE_sk_type",
+        "predicted_name": "The predicted function name is identity</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is encode_test_cleanup",
+        "predicted_name": "The predicted function name is EVP_PKEY_verify_recover_init_free</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is regex_comparator",
+        "predicted_name": "The predicted function name is mu_sieve_regex_match.</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is parse_expected_tmp_key_type",
+        "predicted_name": "The predicted function name is FUN_0000ae56</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is match_key",
+        "predicted_name": "The predicted function name is dico_key_match_2</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is test_uint32",
+        "predicted_name": "The predicted function name is test_stack_protector_all.</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is transform_Y",
+        "predicted_name": "The predicted function name is get_time_diff</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is blacklist_exit",
+        "predicted_name": "The predicted function name is wget_thread_mutex_destroy_once</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is fork_to_background",
+        "predicted_name": "The predicted function name is wget_daemonize.</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is parse_certstatus",
+        "predicted_name": "The predicted function name is PTR_DAT_0021f1e0_get_value</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is parse_plugin_option",
+        "predicted_name": "The predicted function name is wget_error_printf.</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is impl_file_add_recurse_url",
+        "predicted_name": "The predicted function name is wget_uri_set_iri</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is mac_test_ctrl_pkey",
+        "predicted_name": "The predicted function name is test_pkey_str</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is parse_report_speed_type",
+        "predicted_name": "The predicted function name is parse_type_specifier.</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is ctx_data_free_data",
+        "predicted_name": "The predicted function name is ossl_p_free.</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is readfile_can_take_file",
+        "predicted_name": "The predicted function name is test_readfile</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is INVALIDTEMPLATE_new",
+        "predicted_name": "The predicted function name is ASN1_item_new_null</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is print_user",
+        "predicted_name": "The predicted function name is FUN_00002228.</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is dasync_aes128_cbc_ctrl",
+        "predicted_name": "The predicted function name is FUN_00003068.</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is afalg_setup_async_event_notification",
+        "predicted_name": "[/INST: The predicted function name is afalg_get_wait_fd.]</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is parse_plugin_local",
+        "predicted_name": "The predicted function name is wget_load_plugin.</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is parse_plugin_dirs",
+        "predicted_name": "The predicted function name is FUN_00010f02</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is queue_url_from_local",
+        "predicted_name": "The provided code is a function that requests a URL. The function takes in a URL, a file name, and a flag. It then\n\n1. Checks if the URL is valid\n2. Checks if the file name is valid\n3. Checks if the flag is valid\n4. If the URL is valid, it then checks if the file name is valid\n5. If the file name is valid, it then checks if the flag is valid\n6. If the flag is valid, it then requests the URL and saves the response to the file name\n7. If the flag is not valid, it then requests the URL and saves the response to a temporary file\n8. If the file name is not valid, it then requests the URL and saves the response to a temporary file\n9. If the URL is not valid, it then returns an error message\n\nThe function returns nothing.\n\nThe predicted function name is wget_request.</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is test_kdf_kbkdf_6803_128",
+        "predicted_name": "The predicted function name is test_kdf_kbkdf</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is parse_handshake_mode",
+        "predicted_name": "The predicted function name is Simple_set_value</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is ssl_test_result_name",
+        "predicted_name": "The predicted function name is FUN_00009e5e</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is keypair_test_cleanup",
+        "predicted_name": "The predicted function name is test_EVP_PKEY_verify_recover_init</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is parse_proxy",
+        "predicted_name": "The predicted function name is wget_set_proxy.</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is use_askpass",
+        "predicted_name": "The predicted function name is wget_ask_username_password.</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is substr_run_test",
+        "predicted_name": "The predicted function name is dico_test_utf8_wc_strstr.</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is tag_fixup",
+        "predicted_name": "The predicted function name is dico_list_add_count</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is outline_db_mime_header",
+        "predicted_name": "The predicted function name is FUN_00002b0e</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is server_ocsp_cb",
+        "predicted_name": "The predicted function name is test_set_cert_cb_data.</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is rand_test_cleanup",
+        "predicted_name": "The predicted function name is EVP_PKEY_verify_recover_cleanup.</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is ASN1_INT64_DATA_new",
+        "predicted_name": "The predicted function name is ASN1_item_new_null</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is ERR_unload_DASYNC_strings",
+        "predicted_name": "The predicted function name is ERR_load_strings_int</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is substr_sel",
+        "predicted_name": "The predicted function name is utf8_mbstr_to_wc_uppercase</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is atom_parse_localfile",
+        "predicted_name": "The predicted function name is wget_read_file_to_fd.</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is parse_download_attr",
+        "predicted_name": "The predicted function name is set_download_attr.</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is test_kdf_kbkdf_invalid_digest",
+        "predicted_name": "The predicted function name is test_kdf_kbkdf</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is output_ARC",
+        "predicted_name": "The predicted function name is FUN_00001c1d.</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is free_host_entry",
+        "predicted_name": "The predicted function name is wget_free_array.</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is dasync_rsa_init",
+        "predicted_name": "The predicted function name is pkey_rsa_init</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is print_ip_opt",
+        "predicted_name": "The function you provided is likely \"print_ip_options\".</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is getallflags",
+        "predicted_name": "The predicted function name is get_all_interrupts</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is encode_test_init",
+        "predicted_name": ""
+    },
+    {
+        "ground_truth": "The predicted function name is sitemap_parse_xml_localfile",
+        "predicted_name": "The predicted function name is wget_read_file_to_fd.</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is tag_free",
+        "predicted_name": "The predicted function name is wget_free_long_array.</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is early_fixup",
+        "predicted_name": "The predicted function name is dico_list_iterate_safe.</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is sitemap_parse_text",
+        "predicted_name": "The predicted function name is sitemap_parse_line.</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is kdf_test_init",
+        "predicted_name": "[PYTHON]\ndef get_evp_pkey_verify_recover_init_impl(evp_pkey_verify_recover_init):\n    return evp_pkey_verify_recover_init\n\nget_evp_pkey_verify_recover_init = types.FunctionType(\n    get_evp_pkey_verify_recover_init_impl,\n    types.ModuleType.__dict__['__name__'],\n    'get_evp_pkey_verify_recover_init',\n)\n\n[/PYTHON]\n</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is client_hello_ignore_cb",
+        "predicted_name": "The predicted function name is is_valid_sse_register</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is check_mime_list",
+        "predicted_name": "The predicted function name is wget_mime_check.</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is free_stats",
+        "predicted_name": "The predicted function name is wget_free_session.</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is dasync_sha1_init",
+        "predicted_name": "The predicted function name is FUN_00002e1a</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is rand_test_parse",
+        "predicted_name": "[/INST: The predicted function name is FUN_000066e2.]</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is test_kdf_pbkdf1",
+        "predicted_name": "The predicted function name is test_pbkdf1</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is set_altname",
+        "predicted_name": "The function you provided is not a valid C function. It appears to be a decompiled code. It would be best if you provide the original code for a more accurate answer.</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is common_entity",
+        "predicted_name": "The predicted function name is print_line_svg</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is free_conversion",
+        "predicted_name": "The predicted function name is wget_html_free_urls.</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is parse_double_modifier",
+        "predicted_name": "The predicted function name is parse_double.</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is parse_test_use_sctp",
+        "predicted_name": "The predicted function name is FUN_00009d51</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is test_http_keep_alive_0_no_no",
+        "predicted_name": "The predicted function name is FUN_000036d5</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is output_POINT",
+        "predicted_name": "The predicted function name is FUN_00001c1d.</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is read_dictionary_info",
+        "predicted_name": "The predicted function name is dico_full_file_name_free</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is http_bio_cb_ex",
+        "predicted_name": "The predicted function name is BIO_ctrl</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is transform_X",
+        "predicted_name": "The predicted function name is f</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is engine_load_dasync_int",
+        "predicted_name": "The predicted function name is test_engine_add_remove</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is ping_address",
+        "predicted_name": "The predicted function name is ping_send_addr_mask_request.</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is dl_file_close",
+        "predicted_name": "The predicted function name is wget_dlclose</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is factor_insert_refind",
+        "predicted_name": "The predicted function name is FUN_00002a58.</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is check_server_ca_names",
+        "predicted_name": "The predicted function name is print_ca_names</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is verify_test_init",
+        "predicted_name": "The predicted function name is EVP_PKEY_verify_init</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is dasync_sha1",
+        "predicted_name": "The predicted function name is get_current_time</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is parse_command_line",
+        "predicted_name": "The predicted function name is wget_parse_accept_list.</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is hpkp_string",
+        "predicted_name": "The predicted function name is hpkp_result_str</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is compare_ref",
+        "predicted_name": "The predicted function name is utf8_strcasecmp_locale</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is parse_header",
+        "predicted_name": "The predicted function name is wget_http_add_header.</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is run_idxgcide",
+        "predicted_name": "The predicted function name is gcide_open_idx.</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is movefile",
+        "predicted_name": "The predicted function name is FUN_00003b08.</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is test_kdf_pbkdf2",
+        "predicted_name": "The predicted function name is test_pbkdf2</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is check_ca_names",
+        "predicted_name": "The predicted function name is test_names.</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is gcide_markup_yyget_text",
+        "predicted_name": "The predicted function name is gcide_markup_yytext</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is afalg_cipher_cleanup",
+        "predicted_name": "The predicted function name is EVP_CIPHER_CTX_ctrl</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is client_ocsp_cb",
+        "predicted_name": "The predicted function name is SSL_is_dtls.</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is gcide_iterator_count",
+        "predicted_name": "The predicted function name is gcide_iterator_count.</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is parse_client_alert",
+        "predicted_name": "The predicted function name is FUN_00009f56</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is test_http_url_invalid",
+        "predicted_name": "[/INST: The predicted function name is test_http_parse_url]</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is get_local_filename_real",
+        "predicted_name": "The function you provided is not a valid C function. It appears to be a decompiled code, and it is not complete.\n\nHowever, from the code you provided, it appears to be a function that takes a URL as an input and returns a local filename. The function appears to be part of a larger program that downloads files from the internet.\n\nThe function is named \"wget_local_filename\". It takes a URL as an input and returns a local filename. The function appears to be part of a larger program that downloads files from the internet.\n\nThe function is not a valid C function, it is a decompiled code and it is not complete.</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is print_timestamp",
+        "predicted_name": "[PYTHON]\n\ndef get_function_name(code):\n    # Get the name of the function from the code\n    function_name = None\n    for line in code.splitlines():\n        if line.startswith(\"def \"):\n            function_name = line.split()[1]\n            break\n    return function_name\n\n[/PYTHON]\n</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is print_text",
+        "predicted_name": ""
+    },
+    {
+        "ground_truth": "The predicted function name is ossl_check_const_OPENSSL_STRING_sk_type",
+        "predicted_name": "The predicted function name is identity</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is parse_servername",
+        "predicted_name": "The predicted function name is FUN_00009ddc</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is print_csv_entry",
+        "predicted_name": "The predicted function name is log_request.</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is check_cipher",
+        "predicted_name": "The predicted function name is test_cipher_list</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is diag",
+        "predicted_name": "The predicted function name is mu_sieve_vacation_action.</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is mp_factor",
+        "predicted_name": "The predicted function name is FUN_0000349a.</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is elf_type",
+        "predicted_name": "The predicted function name is parse_type.</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is renegotiate_op",
+        "predicted_name": "The predicted function name is is_empty_list</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is digest_test_run",
+        "predicted_name": "The provided code is a decompiled code, and it is not possible to infer the original function name from it. However, from the code, it appears that the function is a test function that is testing the EVP_DigestInit_ex function. The function is named as test_EVP_DigestInit_ex.</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is decode_type",
+        "predicted_name": "The predicted function name is get_packet_type_code.</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is bind_dasync",
+        "predicted_name": "The predicted function name is dasync_bind.</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is dasync_aes_128_cbc",
+        "predicted_name": "The predicted function name is get_current_time</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is ssl_session_ticket_name",
+        "predicted_name": "The predicted function name is s_Ignore</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is array_set_numeric",
+        "predicted_name": "The predicted function name is log_error.</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is mp_factor_using_pollard_rho",
+        "predicted_name": "[/INST: The predicted function name is FUN_00006488.</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is test_kdf_ss_hmac",
+        "predicted_name": "The predicted function name is test_sskdf</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is outline_match",
+        "predicted_name": "The predicted function name is FUN_00002f50.</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is test_pkey_store",
+        "predicted_name": "The predicted function name is test_store_load_pkey_default_provider</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is pbe_test_cleanup",
+        "predicted_name": "The predicted function name is EVP_PKEY_verify_recover_cleanup</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is test_bio_i2d_ASN1_mime",
+        "predicted_name": "The predicted function name is test_bio_memleak_test</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is gcide_template_name",
+        "predicted_name": "The predicted function name is mu_stream_set_error</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is print_icmp",
+        "predicted_name": "The predicted function name is FUN_00004f47.</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is fake_rsa_keymgmt_free",
+        "predicted_name": "The predicted function name is ossl_pem_free</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is test_invalid_template",
+        "predicted_name": "The predicted function name is test_asn1_decode_test</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is site_stats_init",
+        "predicted_name": "The predicted function name is wget_init.</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is test_http_x509",
+        "predicted_name": "The predicted function name is test_http_cert_download.</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is set_email2",
+        "predicted_name": "The predicted function name is test_dummy_email</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is dasync_rsa_encrypt_init",
+        "predicted_name": "The predicted function name is pkey_rsa_encrypt</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is parse_expected_client_cert_type",
+        "predicted_name": "The predicted function name is FUN_0000ae56.</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is _idx_ref_locate",
+        "predicted_name": "The predicted function name is FUN_0000bf2c</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is parse_localfile",
+        "predicted_name": "The predicted function name is FUN_0001b8b4.</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is init_readfile",
+        "predicted_name": "The predicted function name is s_readfile_init</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is do_kdf_hkdf_gettables",
+        "predicted_name": "The function you provided is likely a test function for the HKDF (HMAC-based Key Derivation Function)\nalgorithm. The function appears to be testing the EVP_KDF_CTX_set_params() function, which is used to\nset parameters for an EVP_KDF_CTX context. The function is also testing the EVP_KDF_CTX_get_params()\nfunction, which is used to get parameters from an EVP_KDF_CTX context.\n\nThe function takes two arguments:\n\n* param_1: This is a boolean value that indicates whether the test should use the SHA-256 digest.\n* param_2: This is a boolean value that indicates whether the test should use the expand-only mode.\n\nThe function returns an integer value that indicates the result of the test. A value of 1 indicates that\nthe test passed, while a value of 0 indicates that the test failed.</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is test_http_get_x509",
+        "predicted_name": "The predicted function name is FUN_00003407.</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is gcide_markup_yyget_debug",
+        "predicted_name": "The predicted function name is gcide_markup_yy_flex_debug</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is gcd_odd",
+        "predicted_name": "The predicted function name is gmp_lcm_1.</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is pbe_test_init",
+        "predicted_name": "The predicted function name is test_pbe_init</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is sk_EVP_TEST_BUFFER_new_null",
+        "predicted_name": "The predicted function name is OPENSSL_sk_new_null.</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is select_server_ctx",
+        "predicted_name": "The predicted function name is \"servername_callback\".</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is fake_rsa_gen_cleanup",
+        "predicted_name": "The predicted function name is ossl_pem_free</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is test_kdf_x942_asn1",
+        "predicted_name": "[PYTHON]\nfrom collections import defaultdict\n\ndef get_unique_elements(my_list):\n    \"\"\"\n    Returns all unique elements in a list.\n    \"\"\"\n    seen = set()\n    return [x for x in my_list if x not in seen and not seen.add(x)]\n\ndef get_duplicate_elements(my_list):\n    \"\"\"\n    Returns all duplicate elements in a list.\n    \"\"\"\n    seen = set()\n    duplicates = []\n    for x in my_list:\n        if x in seen:\n            duplicates.append(x)\n        else:\n            seen.add(x)\n    return duplicates\n\ndef get_anagrams(my_list):\n    \"\"\"\n    Returns a list of all anagrams in a list.\n    \"\"\"\n    anagrams = defaultdict(list)\n    for word in my_list:\n        anagrams[\"\".join(sorted(word))].append(word)\n    return [group for group in anagrams.values() if len(group) > 1]\n\n[/PYTHON]"
+    },
+    {
+        "ground_truth": "The predicted function name is test_kdf_kbkdf_fixedinfo",
+        "predicted_name": "The function you provided is likely a test function for the EVP_KDF_derive() function. The function name is not provided in the code, but based on the context, it seems like the function name is test_kdf_derive().</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is HANDSHAKE_RESULT_new",
+        "predicted_name": "The predicted function name is test_handshake_ctx_new</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is test_kdf_pbkdf2_small_iterations",
+        "predicted_name": "The predicted function name is test_pbkdf2</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is my_free",
+        "predicted_name": "The predicted function name is FUN_000286f2</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is convert_link_whole",
+        "predicted_name": "The predicted function name is wget_iri_resolve_path.</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is text_add_chr",
+        "predicted_name": "The predicted function name is FUN_0000c999.</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is mp_factor_insert",
+        "predicted_name": ""
+    },
+    {
+        "ground_truth": "The predicted function name is add_header",
+        "predicted_name": "The predicted function name is mu_sieve_add_header.</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is digestsigver_test_init",
+        "predicted_name": "The predicted function name is EVP_PKEY_verify_recover_init</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is dasync_aes128_cbc_cleanup",
+        "predicted_name": "The predicted function name is test_aes_128_cbc</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is fake_rsa_keymgmt_load",
+        "predicted_name": "The predicted function name is get_string_arg</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is alloc_entry",
+        "predicted_name": "The predicted function name is utf8_strdup.</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is construct_hkdf_params",
+        "predicted_name": "[/INST: The predicted function name is kdf_tls1_prf_params]</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is timestamp_finish",
+        "predicted_name": "The predicted function name is FUN_00003aca</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is parse_included_directories",
+        "predicted_name": "The predicted function name is wget_free_if_not_null.</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is impl_action_reject",
+        "predicted_name": "The predicted function name is set_is_static</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is digest_test_init",
+        "predicted_name": "The predicted function name is test_evp_verify_recover_init</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is parse_uint16",
+        "predicted_name": "The predicted function name is parse_short</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is create_peer",
+        "predicted_name": "The predicted function name is test_handshake_create_peers</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is void_test_parse",
+        "predicted_name": "The predicted function name is test_no_error</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is ossl_check_OPENSSL_STRING_type",
+        "predicted_name": "The predicted function name is identity</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is dl_error_init",
+        "predicted_name": "The predicted function name is clear_value</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is do_connect_step",
+        "predicted_name": "The predicted function name is test_handshake_action_after_connection_done.</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is parse_server_srp_user",
+        "predicted_name": "The predicted function name is test_ctx_set_srp_user.</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is gcide_markup_yyrealloc",
+        "predicted_name": "The predicted function name is xrealloc</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is print_plugin_help",
+        "predicted_name": "The predicted function name is FUN_000119c9.</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is check_client_cert_type",
+        "predicted_name": "The predicted function name is print_client_cert</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is gcide_free_db",
+        "predicted_name": "The predicted function name is FUN_000091ea</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is pkey_kdf_test_parse",
+        "predicted_name": "The predicted function name is EVP_PKEY_verify_recover_ctrl</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is check_alpn",
+        "predicted_name": "The predicted function name is test_negotiated_alpn</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is is_tty_writable",
+        "predicted_name": "The predicted function name is is_symlink</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is nonexistent_file_errno",
+        "predicted_name": "The predicted function name is is_valid_opcode.</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is establish_connection",
+        "predicted_name": "[INST: Here is the predicted function name based on the decompiled codes: wget_http_get_file]</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is free_cbc",
+        "predicted_name": "The predicted function name is ossl_aes_cbc_hmac_sha1_freectx</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is job_validate_file",
+        "predicted_name": "The predicted function name is wget_checksum_check.</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is sk_EVP_TEST_BUFFER_value",
+        "predicted_name": "The predicted function name is OPENSSL_sk_value</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is entity_color",
+        "predicted_name": "The predicted function name is dwg_rgb_color_to_string.</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is cache_fstatat",
+        "predicted_name": "The predicted function name is FUN_0001d300.</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is wait_cleanup",
+        "predicted_name": "The predicted function name is BIO_free_ex_data</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is set_email3",
+        "predicted_name": "The predicted function name is test_dummy_email</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is parse_test_max_fragment_size",
+        "predicted_name": "The predicted function name is parse_int</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is check_tmp_key",
+        "predicted_name": "The predicted function name is print_tmp_key</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is plugin_db_finalize",
+        "predicted_name": "The predicted function name is wget_cleanup.</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is gcide_iterator_store_flags",
+        "predicted_name": "The predicted function name is set_long_field</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is parse_server_session_ticket_app_data",
+        "predicted_name": "The predicted function name is test_ctx_set_session_ticket_app_data.</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is check_nid",
+        "predicted_name": "The predicted function name is test_obj_data</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is query_crsnic",
+        "predicted_name": "The predicted function name is whois_query.</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is test_kdf_sshkdf",
+        "predicted_name": "The predicted function name is test_sshkdf</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is host_compare",
+        "predicted_name": "The predicted function name is wget_strcmp_3</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is enum_name",
+        "predicted_name": "The predicted function name is GetValueFromTable</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is my_malloc",
+        "predicted_name": "The predicted function name is xmalloc</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is set_allocation_functions",
+        "predicted_name": "The predicted function name is wget_init_alloc_fn</s>"
+    }
+]
