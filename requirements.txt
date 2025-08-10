@@ -14,5 +14,5 @@ antlr4-python3-runtime
 protobuf
 nltk
 pyghidra==2.1.0
-ghidra-stubs==11.3
+ghidra-stubs==11.3.2
 openai==1.82.1
