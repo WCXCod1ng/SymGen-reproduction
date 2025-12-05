@@ -61,7 +61,6 @@ def main(
             load_in_8bit=load_8bit,
             torch_dtype=torch.float16,
             device_map="auto",
-            cache_dir='/data/local/linxi/models',
         )
         model = PeftModel.from_pretrained(
             model,
@@ -110,7 +109,7 @@ def main(
         top_p=0.75,
         top_k=40,
         num_beams=1,
-        max_new_tokens=256,
+        max_new_tokens=128,
         stream_output=False,
         **kwargs,
     ):
@@ -152,7 +151,11 @@ def main(
     it = 0
     for t in testset:
         instruction = "Suppose you are an expert in software reverse engineering. Here is a piece of decompiled code, you should infer code semantics and tell me the original function name from the contents of the function to replace [MASK]. And you need to tell me your answer. Now the decompiled codes are as follows:"
-        predicted_name = evaluate(t["instruction"], t["input"])
+        try:
+            predicted_name = evaluate(t["instruction"], t["input"])
+        except torch.OutOfMemoryError as e:
+            print(f"显存溢出，跳过样例{it}", e)
+            continue
         print('-' * 20, "Test Case", it, '-' * 20,)
         it = it + 1
         print(t["instruction"], t["input"])

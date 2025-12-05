@@ -55,37 +55,41 @@ def substitute_decompiled(code):
     global function_map
     global function_count
 
-    file = open('code.txt', 'w')
-    file.write(code)
-    file.close()
+    try:
+        file = open('code.txt', 'w')
+        file.write(code)
+        file.close()
 
-    file = open('code.txt', 'r')
-    code = file.read()
-    antlrInput = InputStream(code)
-    file.close()
+        file = open('code.txt', 'r')
+        code = file.read()
+        antlrInput = InputStream(code)
+        file.close()
 
-    file = open('code.txt', 'r')
-    lines = file.readlines()
-    file.close()
+        file = open('code.txt', 'r')
+        lines = file.readlines()
+        file.close()
 
-    for i in range(len(lines)):
-        column_offset[i] = 0
-    function_map = {}
-    function_count = 0
+        for i in range(len(lines)):
+            column_offset[i] = 0
+        function_map = {}
+        function_count = 0
 
-    lexer = CLexer(antlrInput)
-    stream = CommonTokenStream(lexer)
-    parser = CParser(stream)
-    tree = parser.compilationUnit()
+        lexer = CLexer(antlrInput)
+        stream = CommonTokenStream(lexer)
+        parser = CParser(stream)
+        tree = parser.compilationUnit()
 
-    visitor = SubstituteFunctionNameVisitor()
-    visitor.visit(tree)
+        visitor = SubstituteFunctionNameVisitor()
+        visitor.visit(tree)
 
-    res = ""
-    for line in lines:
-        res += line
+        res = ""
+        for line in lines:
+            res += line
 
-    os.remove('code.txt')
+        os.remove('code.txt')
+    except Exception as e:
+        print("exception:", str(e))
+        return None
 
     return res
 
@@ -153,11 +157,17 @@ def main(args):
                 continue
             existed_function_name.append(function_name)
 
-            decompiled_code = data[function_name]['unstripped']
+            decompiled_code = data[function_name].get('unstripped', None)
             if decompiled_code is None:
                 continue
 
-            modified_decompiled_code = substitute_decompiled(data[function_name]['stripped'])
+            stripped_code = data[function_name].get('stripped', None)
+            if stripped_code is None: # 数据集中存在stripped code缺失的情况，直接跳过
+                continue
+            modified_decompiled_code = substitute_decompiled(stripped_code)
+            # 由于运行时发现可能栈溢出，结果可能为None，如果为None，则丢弃掉
+            if modified_decompiled_code is None:
+                continue
             ### delete duplicate func content
             if modified_decompiled_code in existed_function_body:
                 continue
@@ -185,11 +195,13 @@ def main(args):
                 continue
             existed_function_name.append(function_name)
 
-            decompiled_code = data[function_name]['stripped']
+            decompiled_code = data[function_name].get('stripped', None)
             if decompiled_code is None:
                 continue
 
             modified_decompiled_code = substitute_decompiled(decompiled_code)
+            if modified_decompiled_code is None:
+                continue
             ### delete duplicate func content
             if modified_decompiled_code in existed_function_body:
                 continue
@@ -217,11 +229,13 @@ def main(args):
                 continue
             existed_function_name.append(function_name)
             
-            decompiled_code = data[function_name]['stripped']
+            decompiled_code = data[function_name].get('stripped', None)
             if decompiled_code is None:
                 continue
 
             modified_decompiled_code = substitute_decompiled(decompiled_code)
+            if modified_decompiled_code is None:
+                continue
             ### delete duplicate func content
             if modified_decompiled_code in existed_function_body:
                 continue
