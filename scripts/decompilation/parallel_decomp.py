@@ -34,7 +34,8 @@ def process_stripped_binary(ghidra_path, project_path, project_name, binary_path
     :param binary_path: 要处理的二进制文件的路径（例如.so文件）
     """
     print(f"[*] hold {project_name} for {binary_path}")
-    cmd = f"{ghidra_path} {project_path} {project_name} -import {binary_path} -readOnly -postScript ./decompilation/decomp_for_stripped.py" # 使用Ghidra命令，并在Ghidra反编译之后运行decomp_for_unstripped.py处理。多次执行时可以的，不同的二进制文件分别以一个文件单元的形式存在，Ghidra会根据导入的二进制文件路径（binary_path）区分不同的文件单元（只要binary_path不同就不会覆盖，建议使用绝对路径）。如果想要分析之后不保存，则可以考虑使用-deleteProject选项
+    # cmd = f"{ghidra_path} {project_path} {project_name} -import {binary_path} -readOnly -postScript ./decompilation/decomp_for_stripped.py" # 使用Ghidra命令，并在Ghidra反编译之后运行decomp_for_unstripped.py处理。多次执行时可以的，不同的二进制文件分别以一个文件单元的形式存在，Ghidra会根据导入的二进制文件路径（binary_path）区分不同的文件单元（只要binary_path不同就不会覆盖，建议使用绝对路径）。如果想要分析之后不保存，则可以考虑使用-deleteProject选项
+    cmd = f"{ghidra_path} {project_path} {project_name} -import {binary_path} -readOnly -postScript .\decompilation\decomp_for_stripped.py" # 使用Ghidra命令，并在Ghidra反编译之后运行decomp_for_unstripped.py处理。多次执行时可以的，不同的二进制文件分别以一个文件单元的形式存在，Ghidra会根据导入的二进制文件路径（binary_path）区分不同的文件单元（只要binary_path不同就不会覆盖，建议使用绝对路径）。如果想要分析之后不保存，则可以考虑使用-deleteProject选项
     try:
         subprocess.run(cmd, shell=True, timeout=900*4)
     except subprocess.TimeoutExpired:

@@ -12,7 +12,6 @@ from utils.prompter import Prompter
 
 import json
 
-
 if torch.cuda.is_available():
     device = "cuda"
 else:
@@ -26,11 +25,11 @@ except:  # noqa: E722
 
 
 def main(
-    input_file: str = "",
-    output_dir: str = "",
-    base_model: str = "",
-    load_8bit: bool = False,
-    prompt_template: str = "codellama",  # The prompt template to use, will default to alpaca.
+        input_file: str = "",
+        output_dir: str = "",
+        base_model: str = "",
+        load_8bit: bool = False,
+        prompt_template: str = "codellama",  # The prompt template to use, will default to alpaca.
 ):
     base_model = base_model or os.environ.get("BASE_MODEL", "")
     assert (
@@ -42,7 +41,7 @@ def main(
     assert (
         output_dir
     ), "Please specify a --output_dir"
-    
+
     if not os.path.exists(output_dir):
         os.makedirs(output_dir, exist_ok=True)
 
@@ -80,15 +79,15 @@ def main(
         model = torch.compile(model)
 
     def evaluate(
-        instruction,
-        input=None,
-        temperature=0.1,
-        top_p=0.75,
-        top_k=40,
-        num_beams=3,
-        max_new_tokens=512,
-        stream_output=False,
-        **kwargs,
+            instruction,
+            input=None,
+            temperature=0.1,
+            top_p=0.75,
+            top_k=40,
+            num_beams=3,
+            max_new_tokens=512,
+            stream_output=False,
+            **kwargs,
     ):
         prompt = prompter.generate_prompt(instruction, input)
         inputs = tokenizer(prompt, return_tensors="pt")
@@ -126,7 +125,6 @@ def main(
         output = tokenizer.decode(s)
         return prompter.get_response(output)
 
-
     with open(input_file, 'r') as f:
         source_functions = json.load(f)
 
@@ -141,13 +139,13 @@ def main(
         with open(os.path.join(output_dir, 'checkpoint.json'), 'r') as f:
             checkpoint = set(json.load(f))
 
-    for function_name in source_functions.keys(): # 以function_name作为索引
+    for function_name in source_functions.keys():  # 以function_name作为索引
         instruction = "Summarize the function provided below in a concise and clear manner in 512 words. Highlight the key inputs, outputs, main steps and the main purpose of the function. Avoid unnecessary details and focus on delivering a high-level overview."
-        print('-' * 20, 'Function Summary:', function_name, '-' * 20,)
-        if function_name in checkpoint: # 去重
+        print('-' * 20, 'Function Summary:', function_name, '-' * 20, )
+        if function_name in checkpoint:  # 去重
             print('-' * 20, "skip", '-' * 20)
             continue
-        try: # 显存溢出的问题
+        try:  # 显存溢出的问题
             res = evaluate(instruction, source_functions[function_name])
         except torch.OutOfMemoryError as e:
             print('-' * 20, "OutOfMemoryError", '-' * 20)
@@ -157,7 +155,7 @@ def main(
             print(e)
             continue
 
-        checkpoint.add(function_name) # 标记已经计算完毕
+        checkpoint.add(function_name)  # 标记已经计算完毕
         print(res)
 
         new_data = {}
@@ -174,7 +172,7 @@ def main(
         # checkpoint
         with open(os.path.join(output_dir, 'checkpoint.json'), 'w+') as f:
             json.dump(list(checkpoint), f, indent=4)
-        
+
 
 if __name__ == "__main__":
     fire.Fire(main)

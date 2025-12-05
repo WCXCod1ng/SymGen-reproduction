@@ -12,7 +12,6 @@ from utils.prompter import Prompter
 
 import json
 
-
 if torch.cuda.is_available():
     device = "cuda"
 else:
@@ -26,12 +25,12 @@ except:  # noqa: E722
 
 
 def main(
-    input_path: str = "",
-    output_dir: str = "",
-    base_model: str = "",
-    lora_weights: str = "",
-    load_8bit: bool = False,
-    prompt_template: str = "codellama",  # The prompt template to use, will default to alpaca.
+        input_path: str = "",
+        output_dir: str = "",
+        base_model: str = "",
+        lora_weights: str = "",
+        load_8bit: bool = False,
+        prompt_template: str = "codellama",  # The prompt template to use, will default to alpaca.
 ):
     base_model = base_model or os.environ.get("BASE_MODEL", "")
     assert (
@@ -94,7 +93,6 @@ def main(
     model.config.bos_token_id = 1
     model.config.eos_token_id = 2
 
-
     if not load_8bit:
         model.half()  # seems to fix bugs for some users.
 
@@ -103,15 +101,15 @@ def main(
         model = torch.compile(model)
 
     def evaluate(
-        instruction,
-        input=None,
-        temperature=0.1,
-        top_p=0.75,
-        top_k=40,
-        num_beams=1,
-        max_new_tokens=128,
-        stream_output=False,
-        **kwargs,
+            instruction,
+            input=None,
+            temperature=0.1,
+            top_p=0.75,
+            top_k=40,
+            num_beams=1,
+            max_new_tokens=128,
+            stream_output=False,
+            **kwargs,
     ):
         prompt = prompter.generate_prompt(instruction, input)
         inputs = tokenizer(prompt, return_tensors="pt")
@@ -141,7 +139,6 @@ def main(
         output = tokenizer.decode(s)
         return prompter.get_response(output)
 
-    
     with open(os.path.join(output_dir, 'predicted_function_name.json'), 'w') as f:
         json.dump([], f, indent=4)
 
@@ -156,7 +153,7 @@ def main(
         except torch.OutOfMemoryError as e:
             print(f"显存溢出，跳过样例{it}", e)
             continue
-        print('-' * 20, "Test Case", it, '-' * 20,)
+        print('-' * 20, "Test Case", it, '-' * 20, )
         it = it + 1
         print(t["instruction"], t["input"])
         print(predicted_name)
@@ -175,7 +172,7 @@ def main(
             f.seek(0)
             f.truncate()
             json.dump(data_for_update, f, indent=4)
-        
+
 
 if __name__ == "__main__":
     fire.Fire(main)

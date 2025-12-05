@@ -6,7 +6,7 @@ from ghidra.ghidra_builtins import *
 
 file_path = str(getProgramFile()) # 获取Ghidra中加载的二进制文件的路径，也就是将来在执行analyzedHeadless命令时import的二进制文件
 print("1. load the binary file: ", file_path)
-output_dir = "/root/code/SymGen/decompiled/unstripped"
+output_dir = r"D:\document\python\research\SymGen-reproduction\decompiled\unstripped"
 assert (
     output_dir
 ), "Please provide the dir to save the results in 'decompilation/decom_for_unstripped.py'"

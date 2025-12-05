@@ -1,7 +1,7 @@
 import json
 import os
 
-dataset_divided_folder = '/root/code/SymGen/dataset_divided'
+dataset_divided_folder = '/root/code/SymGen/dataset_divided' # 替换为实际存储“单独”划分之后的数据集的目录
 architectures = ['arm_32', 'mips_32', 'x86_32', 'x86_64']
 optimization_level = ['O0', 'O1', 'O2', 'O3']
 

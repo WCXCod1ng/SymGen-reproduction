@@ -146,7 +146,7 @@ Arguments:
 - `-s`, `--source_dir`: Directory containing the source projects.
 - `-t`, `--test_file`: Path to the test set file for removing duplicates in the collected source function code. For example: /dataset/test_set.json.'
 - `-o`, `--output_dir`: Directory to save the output JSON file.
-
+**没有直接提供源码，但说明了使用的版本，所使用的33个项目中，除了openssl-3.0.6下架之外都能获取到（使用openssl-3.0.5替代）**
 
 #### Generate Function Summary
 To generate summaries for the extracted source functions, use the following command:
@@ -246,3 +246,20 @@ This project includes other components distributed under the Apache License 2.0:
 
 ## Citation
 TODO
+
+
+$$
+SCORE_{member} = SCORE_{base} * (60\% + 40\% * (Work_{member} / Work_{average}))
+\\
+即：成员得分 = 60\%的组得分（每个成员都固定） + 40\%成员绩效得分（根据与平均贡献度20\%进行比较，多加少减）
+\\
+0 \le SCORE_{member} \le 100
+$$
+
+
+
+
+```shell
+accelerate launch --gpu_ids '0,1,2,3' scripts/summary_generation/generate_summary.py --base_model codellama/CodeLlama-34b-Instruct-hf --input_file /root/code/SymGen/all_dataset/source_code_function.json --output_dir /root/code/SymGen/all_dataset
+```
+
