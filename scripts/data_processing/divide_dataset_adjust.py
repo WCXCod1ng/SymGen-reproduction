@@ -2,14 +2,15 @@ import sys
 import json
 import os
 import argparse
-from tqdm import tqdm  # 建议添加 tqdm 显示进度，如果没有安装可删除相关代码
+import gc  # 引入垃圾回收机制
+from tqdm import tqdm
 
 from antlr4 import *
 from antlr.CLexer import CLexer
 from antlr.CParser import CParser
 from antlr.CVisitor import CVisitor
 
-# 全局变量保持不变，供 Visitor 使用
+# ================= 全局变量与 Visitor (保持原逻辑不变) =================
 lines = []
 column_offset = {}
 function_map = {}
@@ -18,11 +19,7 @@ function_count = 0
 
 class SubstituteFunctionNameVisitor(CVisitor):
     def visitPostfixExpression(self, ctx: CParser.PostfixExpressionContext):
-        global lines
-        global column_offset
-        global function_count
-        global function_map
-
+        global lines, column_offset, function_count, function_map
         if ctx.LeftParen() is not None and ctx.primaryExpression() is not None:
             if ctx.primaryExpression().Identifier() is not None:
                 functionNameToken = ctx.primaryExpression().Identifier().getSymbol()
@@ -33,7 +30,7 @@ class SubstituteFunctionNameVisitor(CVisitor):
                         new_function_name = 'FUN_' + str(function_count)
                         function_map[functionNameToken.text] = new_function_name
                         function_count += 1
-                    # 进行字符串替换
+
                     lines[functionNameToken.line - 1] = lines[functionNameToken.line - 1][
                                                         0: functionNameToken.column + column_offset[
                                                             functionNameToken.line - 1]] + new_function_name + lines[
@@ -47,25 +44,21 @@ class SubstituteFunctionNameVisitor(CVisitor):
 
 
 def substitute_decompiled(code):
-    global lines
-    global column_offset
-    global function_map
-    global function_count
-
+    global lines, column_offset, function_map, function_count
     try:
-        # 写入临时文件供 ANTLR 读取
-        with open('code.txt', 'w') as file:
+        # 考虑到并发写入风险，使用pid作为临时文件名的一部分，或者假设是单进程运行
+        temp_filename = f'code_{os.getpid()}.txt'
+        with open(temp_filename, 'w') as file:
             file.write(code)
 
-        with open('code.txt', 'r') as file:
-            code = file.read()
-            antlrInput = InputStream(code)
+        with open(temp_filename, 'r') as file:
+            code_content = file.read()
+            antlrInput = InputStream(code_content)
 
-        with open('code.txt', 'r') as file:
+        with open(temp_filename, 'r') as file:
             lines = file.readlines()
 
-        for i in range(len(lines)):
-            column_offset[i] = 0
+        column_offset = {i: 0 for i in range(len(lines))}
         function_map = {}
         function_count = 0
 
@@ -78,47 +71,45 @@ def substitute_decompiled(code):
         visitor.visit(tree)
 
         res = "".join(lines)
-
-        if os.path.exists('code.txt'):
-            os.remove('code.txt')
-
-    except Exception as e:
-        # print("exception:", str(e)) # 可以选择打印错误或忽略
-        if os.path.exists('code.txt'):
-            os.remove('code.txt')
+        if os.path.exists(temp_filename): os.remove(temp_filename)
+        return res
+    except Exception:
+        if os.path.exists(temp_filename): os.remove(temp_filename)
         return None
 
-    return res
+
+# ================= 处理逻辑 =================
+
+def filter_file_list(file_list, target_arch, target_opt):
+    """
+    从总列表中筛选出符合当前 架构/优化等级 的文件路径
+    假设路径格式: arch/opt/project/file
+    """
+    filtered = []
+    # 构造匹配前缀，如 "arm/O0"
+    prefix = f"{target_arch}/{target_opt}"
+
+    for f in file_list:
+        # 统一路径分隔符并检查前缀
+        normalized_path = f.replace('\\', '/')
+        if normalized_path.startswith(prefix):
+            filtered.append(f)
+    return filtered
 
 
 def process_file_list(file_list, input_root_dir, existed_names, existed_bodies, is_training_mode=False):
-    """
-    处理文件列表的通用函数
-    :param file_list: 包含相对路径的列表 ["arch/opt/proj/file", ...]
-    :param input_root_dir: 数据集根目录
-    :param existed_names: 全局已存在的函数名集合（用于去重）
-    :param existed_bodies: 全局已存在的函数体集合（用于去重）
-    :param is_training_mode: 如果是训练集，原逻辑使用 unstripped 代码；否则使用 stripped 代码
-    :return: 处理好的样本列表
-    """
-    processed_samples = []
+    processed_data = []
 
-    # 使用 tqdm 显示进度条
-    pbar = tqdm(file_list, desc="Processing")
-
-    for relative_path in pbar:
-        # 构建完整路径
-        # 假设 json 中的路径已经是相对路径，例如 "arm/O0/project/file.json"
-        # 如果 json 中没有后缀，这里可能需要加上 .json，根据你的描述假设包含完整文件名
+    # 使用 tqdm 时，如果不显示进度条可以减少打印带来的IO开销，这里保留但在Shell调用时可忽略
+    for relative_path in tqdm(file_list, desc="Processing", leave=False):
         full_path = os.path.join(input_root_dir, relative_path)
 
+        # 容错处理：尝试添加 .json 后缀
         if not os.path.exists(full_path):
-            # 尝试加 .json 后缀（防止提供的列表中没有后缀）
             if os.path.exists(full_path + '.json'):
                 full_path += '.json'
             else:
-                raise RuntimeError(f"Warning: File not found {full_path}")
-                # continue
+                continue
 
         try:
             with open(full_path, 'r') as f:
@@ -126,133 +117,141 @@ def process_file_list(file_list, input_root_dir, existed_names, existed_bodies, 
         except Exception:
             continue
 
-        for function_name in data.keys():
-            # 1. 过滤无意义的函数名
-            if 'FUN_' in function_name:
-                continue
+        # 显式内存管理：处理完一个文件后，确保 data 引用被释放（Python作用域自动处理，但手动注意更好）
+        for function_name in list(data.keys()):  # list()创建副本，允许修改字典或安全遍历
+            if 'FUN_' in function_name: continue
 
-            # 2. 函数名去重
-            if function_name in existed_names:
-                continue
-            existed_names.append(function_name)
-
-            # 3. 获取代码内容
-            # 原逻辑：
-            # 训练集：取 unstripped 用于 input (Sample['input']), 取 stripped 用于 substitute (Check)
-            # 测试集：取 stripped 用于 input
+            # 去重
+            if function_name in existed_names: continue
 
             stripped_code = data[function_name].get('stripped', None)
-            if stripped_code is None:
-                continue
+            if stripped_code is None: continue
 
-            # 无论训练还是测试，都使用 stripped 代码进行 substitute 处理来检查是否合法/去重
+            # 清洗
             modified_decompiled_code = substitute_decompiled(stripped_code)
+            if modified_decompiled_code is None: continue
 
-            if modified_decompiled_code is None:
-                continue
+            # 内容去重
+            if modified_decompiled_code in existed_bodies: continue
 
-            # 4. 函数体内容去重
-            if modified_decompiled_code in existed_bodies:
-                continue
+            # 这里先添加到去重集合，确保当前 Batch 内不重复
+            # 注意：跨 Batch 的去重（比如 O0 和 O1 之间）在这个方案中被牺牲了，
+            # 除非引入外部数据库（Redis）。但题目要求按架构/优化等级分开处理，
+            # 通常意味着只需保证该组合内的唯一性，或接受不同优化等级间的重复。
+            existed_names.append(function_name)
             existed_bodies.append(modified_decompiled_code)
 
-            # 5. 构建样本
-            # 关键：根据原代码逻辑，训练集使用的是 unstripped 代码作为 input
+            # 构建样本
             if is_training_mode:
                 input_code = data[function_name].get('unstripped', None)
-                if input_code is None:
-                    continue
+                if input_code is None: continue
             else:
-                input_code = stripped_code  # 测试集和验证集使用 stripped 代码
+                input_code = stripped_code
 
-            sample = {}
-            sample[
-                "instruction"] = "Suppose you are an expert in software reverse engineering. Here is a piece of decompiled code, you should infer code semantics and tell me the original function name from the contents of the function to replace [MASK]. Now the decompiled codes are as follows:"
-            sample["input"] = input_code
-            sample["output"] = 'The predicted function name is ' + function_name
-            processed_samples.append(sample)
+            sample = {
+                "instruction": "Suppose you are an expert in software reverse engineering. Here is a piece of decompiled code, you should infer code semantics and tell me the original function name from the contents of the function to replace [MASK]. Now the decompiled codes are as follows:",
+                "input": input_code,
+                "output": 'The predicted function name is ' + function_name
+            }
+            processed_data.append(sample)
 
-    return processed_samples
+    return processed_data
+
+
+def save_json(data, output_path):
+    """单独的保存函数"""
+    if not data:
+        return
+    try:
+        with open(output_path, 'w') as f:
+            json.dump(data, f, indent=4)
+        print(f"    Saved: {output_path} ({len(data)} samples)")
+    except Exception as e:
+        print(f"    Error saving {output_path}: {e}")
 
 
 def main(args):
     input_dir = args.input_dir
     output_dir = args.output_dir
+    target_arch = args.arch
+    target_opt = args.opt
 
-    # 1. 加载划分列表
-    print(f"[+] Loading split lists...")
+    prefix_name = f"{target_arch}_{target_opt}"
+    print(f"[-] Starting process for: {prefix_name}")
+
+    # 1. 加载所有列表 (文件列表本身通常不大，MB级别，可以加载)
     try:
         with open(args.train_list, 'r') as f:
-            train_files = json.load(f)
+            train_files_all = json.load(f)
         with open(args.valid_list, 'r') as f:
-            valid_files = json.load(f)
+            valid_files_all = json.load(f)
         with open(args.test_list, 'r') as f:
-            test_files = json.load(f)
+            test_files_all = json.load(f)
     except Exception as e:
-        print(f"Error loading split files: {e}")
+        print(f"Error loading split lists: {e}")
         return
 
-    print(f"    Train files: {len(train_files)}")
-    print(f"    Valid files: {len(valid_files)}")
-    print(f"    Test files:  {len(test_files)}")
+    # 2. 筛选当前需要处理的文件
+    train_files = filter_file_list(train_files_all, target_arch, target_opt)
+    test_files = filter_file_list(test_files_all, target_arch, target_opt)
+    valid_files = filter_file_list(valid_files_all, target_arch, target_opt)
 
-    # 2. 初始化全局去重集合
-    # 注意：按照原代码逻辑，是先处理 Train，再 Test，再 Valid。
-    # 这样 Test 和 Valid 中不会出现 Train 中已经出现过的函数。
+    print(f"    Filtered Files -> Train: {len(train_files)} | Test: {len(test_files)} | Valid: {len(valid_files)}")
+
+    # 释放大列表内存
+    del train_files_all, valid_files_all, test_files_all
+    gc.collect()
+
+    if len(train_files) == 0 and len(test_files) == 0 and len(valid_files) == 0:
+        print("    No files found for this configuration. Skipping.")
+        return
+
+    # 3. 初始化当前 Batch 的去重集合
     existed_function_name = []
     existed_function_body = []
 
-    # 3. 处理数据集
-    print("[+] Process Training Set Binary")
-    train_data = process_file_list(
-        train_files, input_dir, existed_function_name, existed_function_body, is_training_mode=True
-    )
-
-    print("[+] Process Test Set Binary")
-    test_data = process_file_list(
-        test_files, input_dir, existed_function_name, existed_function_body, is_training_mode=False
-    )
-
-    print("[+] Process Validation Set Binary")
-    valid_data = process_file_list(
-        valid_files, input_dir, existed_function_name, existed_function_body, is_training_mode=False
-    )
-
-    # 4. 保存结果
     if not os.path.exists(output_dir):
         os.makedirs(output_dir, exist_ok=True)
 
-    print(f"[+] Saving results to {output_dir}...")
+    # 4. 依次处理并保存
+    # Train
+    if train_files:
+        train_data = process_file_list(train_files, input_dir, existed_function_name, existed_function_body,
+                                       is_training_mode=True)
+        save_json(train_data, os.path.join(output_dir, f'train_set_{prefix_name}.json'))
+        del train_data  # 释放内存
+        gc.collect()
 
-    with open(os.path.join(output_dir, 'training_set.json'), 'w') as f:
-        json.dump(train_data, f, indent=4)
-        print(f"    Saved training_set.json ({len(train_data)} samples)")
+    # Test
+    if test_files:
+        test_data = process_file_list(test_files, input_dir, existed_function_name, existed_function_body,
+                                      is_training_mode=False)
+        save_json(test_data, os.path.join(output_dir, f'test_set_{prefix_name}.json'))
+        del test_data
+        gc.collect()
 
-    with open(os.path.join(output_dir, 'test_set.json'), 'w') as f:
-        json.dump(test_data, f, indent=4)
-        print(f"    Saved test_set.json ({len(test_data)} samples)")
+    # Valid
+    if valid_files:
+        valid_data = process_file_list(valid_files, input_dir, existed_function_name, existed_function_body,
+                                       is_training_mode=False)
+        save_json(valid_data, os.path.join(output_dir, f'validation_set_{prefix_name}.json'))
+        del valid_data
+        gc.collect()
 
-    with open(os.path.join(output_dir, 'validation_set.json'), 'w') as f:
-        json.dump(valid_data, f, indent=4)
-        print(f"    Saved validation_set.json ({len(valid_data)} samples)")
+    print(f"[+] Completed: {prefix_name}")
 
 
 if __name__ == '__main__':
-    parser = argparse.ArgumentParser(description='Generate dataset from pre-defined split lists.')
+    parser = argparse.ArgumentParser()
+    parser.add_argument('-i', '--input_dir', type=str, required=True)
+    parser.add_argument('-o', '--output_dir', type=str, required=True)
+    parser.add_argument('--train_list', type=str, required=True)
+    parser.add_argument('--valid_list', type=str, required=True)
+    parser.add_argument('--test_list', type=str, required=True)
 
-    parser.add_argument('-i', '--input_dir', type=str, required=True,
-                        help='Root directory containing the dataset files (structured as arch/opt/proj/file).')
-
-    parser.add_argument('-o', '--output_dir', type=str, required=True,
-                        help='Directory to save the processed dataset jsons.')
-
-    # 新增参数：指定划分文件
-    parser.add_argument('--train_list', type=str, required=True,
-                        help='Path to the json file containing the list of training files.')
-    parser.add_argument('--valid_list', type=str, required=True,
-                        help='Path to the json file containing the list of validation files.')
-    parser.add_argument('--test_list', type=str, required=True,
-                        help='Path to the json file containing the list of test files.')
+    # 新增参数
+    parser.add_argument('--arch', type=str, required=True, help='Architecture (e.g., arm)')
+    parser.add_argument('--opt', type=str, required=True, help='Optimization level (e.g., O0)')
 
     args = parser.parse_args()
     main(args)
