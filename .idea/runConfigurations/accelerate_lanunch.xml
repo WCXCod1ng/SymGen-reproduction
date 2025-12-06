@@ -1,0 +1,26 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="accelerate_lanunch" type="PythonConfigurationType" factoryName="Python">
+    <module name="SymGen" />
+    <option name="ENV_FILES" value="" />
+    <option name="INTERPRETER_OPTIONS" value="" />
+    <option name="PARENT_ENVS" value="true" />
+    <envs>
+      <env name="PYTHONUNBUFFERED" value="1" />
+    </envs>
+    <option name="SDK_HOME" value="" />
+    <option name="SDK_NAME" value="symgen" />
+    <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/scripts" />
+    <option name="IS_MODULE_SDK" value="false" />
+    <option name="ADD_CONTENT_ROOTS" value="true" />
+    <option name="ADD_SOURCE_ROOTS" value="true" />
+    <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+    <option name="SCRIPT_NAME" value="accelerate.commands.launch" />
+    <option name="PARAMETERS" value="--gpu_ids '0,1,2,3' $PROJECT_DIR$/scripts/summary_generation/generate_summary.py --base_model codellama/CodeLlama-34b-Instruct-hf --input_file $PROJECT_DIR$/all_dataset/source_code_function.json --output_dir $PROJECT_DIR$/all_dataset" />
+    <option name="SHOW_COMMAND_LINE" value="false" />
+    <option name="EMULATE_TERMINAL" value="false" />
+    <option name="MODULE_MODE" value="true" />
+    <option name="REDIRECT_INPUT" value="false" />
+    <option name="INPUT_FILE" value="" />
+    <method v="2" />
+  </configuration>
+</component>

@@ -1,0 +1,2406 @@
+[
+    {
+        "ground_truth": "The predicted function name is do_match",
+        "predicted_name": "The predicted function name is FUN_00000d24.</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is match_GEOPOSITIONMARKER",
+        "predicted_name": "The predicted function name is FUN_00000d88.</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is match_BLOCKPARAMDEPENDENCYBODY",
+        "predicted_name": "[INST: The predicted function name is FUN_00000d88.]</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is match_ASSOCTRIMSURFACEACTIONBODY",
+        "predicted_name": "The provided code is a decompiled code, and it is not possible to infer the original function name from the contents of the function. However, from the contents of the function, it appears to be a function that performs some operations on a resbuf structure. The function takes two parameters, a resbuf structure and an integer, and returns an integer. The function appears to be recursively traversing the resbuf structure and performing some operations on the data it finds.</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is match_ASSOCORDINATEDIMACTIONBODY",
+        "predicted_name": "The provided code is a decompiled function that appears to be a part of a larger program. The function takes in\n multiple parameters and performs a series of operations. It is not possible to determine the exact name of the function\n from the provided code alone.\n\nThe function appears to be a part of a program that is related to reverse engineering and decompilation of code. The\n function takes in a number of parameters, including a pointer to a structure, a pointer to a function, and a number of\n integers. The function then performs a series of operations, including calling the function pointed to by the second\n parameter, and modifying the contents of the structure pointed to by the first parameter.\n\nIt is not possible to determine the exact name of the function from the provided code alone. The name of the function\n may be present in the decompiled code, or it may be present in the original source code. It is also possible that the\n function has not been given a name in the source code, in which case it may be referred to by its address or by a\n placeholder name such as \"sub_1234\".</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is match_ASSOCLOFTEDSURFACEACTIONBODY",
+        "predicted_name": "The provided code is a decompiled function that appears to be a part of a larger program. The function takes in\n multiple parameters and performs a series of operations. It is not possible to determine the exact name of the function\n from the provided code alone.\n\nThe function appears to be a part of a program that is related to reverse engineering and decompilation of code. The\n function takes in a number of parameters, including a pointer to a structure, an integer, a pointer to a function, and\n a pointer to a buffer. The function then performs a series of operations on the input parameters, including\n dereferencing pointers, accessing the contents of structures, and calling functions. The exact purpose of the function\n is not clear from the provided code alone.\n\nIt is important to note that reverse engineering and decompilation of code can be a complex and time-consuming process.\n It is also important to ensure that any decompiled code is used for legal and ethical purposes only.</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is match_LAYER",
+        "predicted_name": "[INST: The predicted function name is FUN_00000d88.]</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is match_VPORT",
+        "predicted_name": "[/INST: The predicted function name is FUN_00000d88.]</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is match_ASSOC3POINTANGULARDIMACTIONBODY",
+        "predicted_name": "The provided code is a function that appears to be responsible for handling the \"DW_AT_type\" attribute of a DWARF debugging information entry. The function takes three arguments:\n\n* param_1: The value of the \"DW_AT_type\" attribute.\n* param_2: A pointer to a DWARF debugging information entry.\n* param_3: A pointer to a DWARF debugging information entry.\n\nThe function appears to be recursively traversing the DWARF debugging information to find the type of a variable or function. It is using the \"DW_AT_type\" attribute to find the type of the variable or function, and it is recursively calling itself to find the type of the type.\n\nThe function is also using the \"DW_AT_name\" attribute to get the name of the variable or function. It is also using the \"DW_AT_linkage_name\" attribute to get the linkage name of the variable or function.\n\nThe function is returning an integer value, which is likely to be an error code or a status code.</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is match_ASSOCOSNAPPOINTREFACTIONPARAM",
+        "predicted_name": "The predicted function name is FUN_00000d88.</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is match_DBCOLOR",
+        "predicted_name": "The function you provided is likely a decompiled code, and the predicted function name is not available. However, from the contents of the function, it appears to be a part of a larger program that performs some operations on a data structure. The function takes in a data structure, a pointer to a function, and a pointer to a data structure. It then iterates through the data structure and performs some operations on it. The exact nature of the operations is not clear from the provided code snippet.</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is match_DIMASSOC",
+        "predicted_name": "[INST: The predicted function name is FUN_00000d88.]</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is match_ASSOCACTIONPARAM",
+        "predicted_name": "The predicted function name is FUN_00000d88.</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is match_TABLE",
+        "predicted_name": "The predicted function name is FUN_00000d88.</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is match_ASSOCVERTEXACTIONPARAM",
+        "predicted_name": "[/INST: The predicted function name is FUN_00000d88.]</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is match_ATTRIB",
+        "predicted_name": "The function you provided is likely \"FUN_00000d88\".</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is match_HATCH",
+        "predicted_name": "The function you provided is likely a part of a larger program that performs various operations on a binary file.\n\nThe function you provided appears to be a part of a function that performs a series of operations on a binary file. The function takes a number of arguments, including a pointer to a structure that contains information about the binary file, a pointer to a buffer, and a number of other parameters.\n\nThe function appears to be reading data from the binary file and performing some operations on it. The specific operations that the function performs will depend on the specific implementation of the function.\n\nWithout more context, it is difficult to provide a more detailed explanation of the specific operations that the function performs. If you have any additional information about the function or the program that it is a part of, I may be able to provide a more detailed explanation.</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is match_ASSOCROTATEDDIMACTIONBODY",
+        "predicted_name": "The provided code is a decompiled function that appears to be a part of a larger program. The function takes in\n multiple parameters and performs a series of operations. It is not possible to determine the exact name of the function\n from the provided code.\n \n The function appears to be a part of a program that is related to reverse engineering and decompilation of code. The\n function takes in a number of parameters, including a pointer to a structure, an integer, a pointer to a function, and\n a pointer to a buffer. The function then performs a series of operations on the input parameters, including\n dereferencing pointers, accessing the contents of structures, and calling functions. The exact purpose of the function\n is not clear from the provided code.</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is match_LIGHTLIST",
+        "predicted_name": "[INST: The predicted function name is FUN_00000d88.]</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is match_BLOCKVISIBILITYGRIP",
+        "predicted_name": "The predicted function name is \"FUN_00000d88\".</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is match_ASSOCALIGNEDDIMACTIONBODY",
+        "predicted_name": "The provided code is a decompiled function that appears to be a part of a larger program. The function takes in\n multiple parameters and performs a series of operations. It is not possible to determine the exact name of the function\n from the provided code alone.\n\nThe function appears to be a part of a program that is related to reverse engineering and decompilation of code. The\n function takes in a number of parameters, including a pointer to a structure, an integer, a pointer to a function, and\n a pointer to a buffer. The function then performs a series of operations on the input parameters, including\n extracting data from the structure, calling the function pointed to by the function pointer, and writing data to the\n buffer. The exact purpose of the function is not clear from the provided code alone.</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is match_ASSOCFACEACTIONPARAM",
+        "predicted_name": "[PYTHON]\ndef get_predicted_function_name(decompiled_code):\n    # Check if the decompiled code includes the \"get_predicted_function_name\" function\n    if \"get_predicted_function_name\" not in decompiled_code:\n        return None\n    \n    # Search for the predicted function name in the decompiled code\n    predicted_function_name = re.search(r\"get_predicted_function_name\\(\\)(?:\\s+\\w+)?\\s*=\\s*\\\"(\\w+)\\\"\", decompiled_code).group(1)\n    \n    # Return the predicted function name\n    return predicted_function_name\n\n[/PYTHON]\n</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is match_STYLE",
+        "predicted_name": "The predicted function name is \"FUN_00000d88\".</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is match_NAVISWORKSMODELDEF",
+        "predicted_name": "The predicted function name is FUN_00000d88.</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is match_ASSOCEDGEACTIONPARAM",
+        "predicted_name": "The predicted function name is \"FUN_00000d88\".</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is match_LAYER_INDEX",
+        "predicted_name": "[INST: The predicted function name is FUN_00000d88.]</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is match_DICTIONARY",
+        "predicted_name": "The predicted function name is FUN_00000d88.</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is match_MTEXT",
+        "predicted_name": "The predicted function name is FUN_00000d88.</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is match_ASSOCNETWORKSURFACEACTIONBODY",
+        "predicted_name": "The provided code is a function that appears to be responsible for handling the \"DW_AT_type\" attribute of a DWARF debugging information entry. The function takes three arguments:\n\n* param_1: This is a pointer to a DWARF debugging information entry.\n* param_2: This is a pointer to a DWARF debugging information entry.\n* param_3: This is a pointer to a DWARF debugging information entry.\n\nThe function appears to be recursively traversing the DWARF debugging information, starting from the entry pointed to by param_1, and searching for entries that have a \"DW_AT_type\" attribute that matches the type of the entry pointed to by param_2. If a matching entry is found, the function appears to be recursively calling itself on the matching entry and the entry pointed to by param_3.\n\nIt is difficult to provide a more specific name for this function without further context, as the name \"dwg_resbuf_value_type\" does not provide much information about the purpose of the function.</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is match_3DSOLID",
+        "predicted_name": "The predicted function name is FUN_00000d88.</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is match_VISUALSTYLE",
+        "predicted_name": "[INST: The predicted function name is FUN_00000d88.]</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is match_ASSOCPLANESURFACEACTIONBODY",
+        "predicted_name": "The provided code is a decompiled function that appears to be a part of a larger program. The function takes in\n multiple parameters and performs a series of operations. It is not possible to determine the exact name of the function\n from the provided code.\n \n The function appears to be a part of a program that is related to reverse engineering and decompilation of code. The\n function takes in a number of parameters, including a pointer to a structure, a pointer to a function, and a number of\n integers. The function then performs a series of operations, including calling the function pointed to by the second\n parameter, and modifying the contents of the structure pointed to by the first parameter. The exact purpose of the\n function is not clear from the provided code.</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is match_TEXT",
+        "predicted_name": "[INST: The predicted function name is FUN_00000d88.]</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is match_MULTILEADER",
+        "predicted_name": "[/INST: The predicted function name is FUN_00000d88.]</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is match_DICTIONARYVAR",
+        "predicted_name": "[/INST: The predicted function name is FUN_00000d88.]</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is print_match",
+        "predicted_name": "The predicted function name is print_bit_array.</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is match_MLINESTYLE",
+        "predicted_name": "The function you provided is likely \"FUN_00000d88\".</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is match_ASSOCEXTRUDEDSURFACEACTIONBODY",
+        "predicted_name": "The function you provided is likely a part of a larger program, and its specific purpose and functionality can only be determined by analyzing the entire codebase.\n\nHowever, based on the provided code, it appears that the function is responsible for handling the \"resbuf\" data structure, which is a common data structure used in CAD software to represent a list of resources. The function appears to be iterating through the resbuf data structure and performing some operations on each element.\n\nThe specific operations performed by the function depend on the value of the \"type\" parameter, which is not provided in the code snippet you provided. The function appears to be using the \"type\" parameter to determine which operation to perform on each element of the resbuf data structure.\n\nWithout further context, it is not possible to provide a more specific name for this function.</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is match_SCALE",
+        "predicted_name": "[INST: The predicted function name is FUN_00000d88.]</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is match_BLOCKSTRETCHACTION",
+        "predicted_name": "The function you provided is likely a decompiled code, and the predicted function name is not available. However, from the contents of the function, it appears to be a function that handles the conversion of a value from a specific unit to another. The function takes in a value, a source unit, a target unit, and a precision level, and returns the converted value. The function first checks if the source and target units are the same, and if they are, it returns the original value. If they are not the same, it checks if the source unit is valid, and if it is, it converts the value to the target unit using a conversion factor. The function then rounds the converted value to the specified precision level and returns it.</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is match_ASSOCSWEPTSURFACEACTIONBODY",
+        "predicted_name": "The function you provided is likely a part of a larger program that is responsible for converting data from one format to another. The function appears to be converting data from a binary format to a text-based format.\n\nThe function takes in a number of parameters, including a pointer to a buffer containing the data to be converted, the size of the buffer, and a pointer to a structure that contains information about the conversion process. The function then iterates through the data in the buffer, converting each piece of data to its corresponding text-based representation.\n\nThe function appears to be using a number of different conversion functions, including `bit_convert_TU`, `dwg_resbuf_value_type`, and `FUN_00000d88`. These functions are likely defined elsewhere in the program and are used to perform specific conversions.\n\nOverall, the function you provided is likely a part of a larger program that is responsible for converting data from one format to another. The specific details of the conversion process will depend on the specific requirements of the program and the data being converted.</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is match_UCS",
+        "predicted_name": "[INST: The predicted function name is FUN_00000d88.]</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is match_TABLESTYLE",
+        "predicted_name": "[/INST: The predicted function name is FUN_00000d88.]</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is match_ASSOCMLEADERACTIONBODY",
+        "predicted_name": "The provided code is a function that appears to be responsible for handling the \"DW_AT_type\" attribute of a DWARF debugging information entry. The function takes three arguments:\n\n* param_1: The value of the \"DW_AT_type\" attribute.\n* param_2: A pointer to a DWARF debugging information entry.\n* param_3: A pointer to a DWARF debugging information entry.\n\nThe function appears to be recursively traversing the DWARF debugging information to find the type of a variable or function. It is using the \"DW_AT_type\" attribute to find the type of the variable or function, and then recursively calling itself to find the type of the type.\n\nThe function is also using a number of global variables, such as DAT_00009238, DAT_00009248, DAT_00009250, and DAT_00009254, which are likely to be used to store information about the DWARF debugging information.\n\nIt is difficult to provide a more specific name for this function without more"
+    },
+    {
+        "ground_truth": "The predicted function name is match_GROUP",
+        "predicted_name": "[/INST: The predicted function name is FUN_00000d88.]</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is match_UNDERLAYDEFINITION",
+        "predicted_name": "The predicted function name is \"FUN_00000d88\".</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is match_ASSOCOBJECTACTIONPARAM",
+        "predicted_name": "[PYTHON]\ndef get_predicted_function_name(decompiled_code):\n    # Check if the decompiled code includes the \"get_predicted_function_name\" function\n    if \"get_predicted_function_name\" not in decompiled_code:\n        return None\n    \n    # Search for the predicted function name in the decompiled code\n    predicted_function_name = re.search(r\"get_predicted_function_name\\(\\)(?:\\s+\\w+)?\\s*=\\s*\\\"(\\w+)\\\"\", decompiled_code).group(1)\n    \n    # Return the predicted function name\n    return predicted_function_name\n[/PYTHON]\n</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is match_ASSOCOFFSETSURFACEACTIONBODY",
+        "predicted_name": "The provided code is a decompiled function that appears to be a part of a larger program. The function takes in\n multiple parameters and performs a series of operations. It is not possible to determine the exact name of the function\n from the provided code.\n \n The function appears to be a part of a program that is related to reverse engineering and decompilation of code. The\n function takes in a number of parameters, including a pointer to a structure, an integer, a pointer to a function, and\n a pointer to a buffer. The function then performs a series of operations on the input parameters, including\n dereferencing pointers, accessing the contents of structures, and calling functions. The exact purpose of the function\n is not clear from the provided code.</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is match_BLOCKROTATEACTION",
+        "predicted_name": "The function you provided is likely a decompiled code, and the predicted function name is not available. However, from the contents of the function, it appears to be a part of a larger program that performs some operations on a data structure. The function takes in a data structure, a pointer to a function, and a pointer to a data structure. It then iterates through the data structure and performs some operations on each element. The exact nature of the operations is not clear from the provided code snippet.</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is match_IMAGEDEF",
+        "predicted_name": "[INST: The predicted function name is FUN_00000d88.]</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is match_ASSOCPATCHSURFACEACTIONBODY",
+        "predicted_name": "The provided code is a decompiled code, and it is not possible to infer the original function name from the contents of the function. However, from the contents of the function, it appears to be a function that performs some operations on a resbuf structure. The function takes two parameters, a resbuf structure and an integer, and returns an integer. The function appears to be recursively traversing the resbuf structure and performing some operations on the data it finds.</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is match_TOLERANCE",
+        "predicted_name": "The predicted function name is FUN_00000d88.</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is match_SUNSTUDY",
+        "predicted_name": "The predicted function name is \"FUN_00000d88\".</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is match_ASSOCFILLETSURFACEACTIONBODY",
+        "predicted_name": "The function you provided is likely a part of a larger program, and its specific purpose and functionality can only be determined by analyzing the entire codebase.\n\nHowever, based on the code you provided, it appears that the function is responsible for handling the \"resbuf\" data structure, which is a common data structure used in CAD software to represent a list of resources. The function appears to be iterating through the resbuf data structure and performing some operations on each element.\n\nWithout further context, it is not possible to provide a more specific name for this function.</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is match_VX_TABLE_RECORD",
+        "predicted_name": "The predicted function name is FUN_00000d88.</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is match_LIGHT",
+        "predicted_name": "[/INST: The predicted function name is FUN_00000d88.]</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is match_VIEW",
+        "predicted_name": "[/INST: The predicted function name is FUN_00000d88.]</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is match_BLOCK",
+        "predicted_name": "[/INST: The predicted function name is FUN_00000d88.]</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is match_DIMENSION",
+        "predicted_name": "The predicted function name is FUN_00000d88.</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is match_LTYPE",
+        "predicted_name": "The predicted function name is \"FUN_00000d88\".</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is match_BLOCKMOVEACTION",
+        "predicted_name": "The function you provided is likely a part of a larger program that implements a custom compression algorithm.\n\nThe function appears to be responsible for encoding a single symbol in the compressed data. It takes as input a pointer to the current position in the compressed data, a pointer to the start of the compressed data, and a symbol to encode.\n\nThe function first checks if the symbol is a literal (i.e., not a reference to a previous symbol). If it is, it simply writes the symbol to the compressed data and returns.\n\nIf the symbol is not a literal, the function checks if it is a reference to a previous symbol. If it is, it encodes the reference using a variable-length code. The code is determined by the distance between the current position and the position of the referenced symbol. The distance is encoded using a Huffman code, and the resulting code is written to the compressed data.\n\nFinally, the function updates the current position in the compressed data and returns.\n\nOverall, the function appears to be a key component of a custom compression algorithm that uses a combination of literal symbols and references to previous symbols to achieve good compression ratios.</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is match_ASSOCPATHACTIONPARAM",
+        "predicted_name": "The predicted function name is FUN_00000d88.</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is match_VIEWPORT",
+        "predicted_name": "The predicted function name is FUN_00000d88.</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is match_ATTDEF",
+        "predicted_name": "The predicted function name is \"FUN_00000d88\".</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is match_BLOCKGRIPLOCATIONCOMPONENT",
+        "predicted_name": "The predicted function name is FUN_00000d88.</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is match_ASSOCREVOLVEDSURFACEACTIONBODY",
+        "predicted_name": "The provided code is a function that appears to be responsible for handling the \"DW_AT_type\" attribute of a DWARF debugging information entry. The function takes three arguments:\n\n* param_1: This is a pointer to a DWARF debugging information entry.\n* param_2: This is a pointer to a DWARF debugging information entry.\n* param_3: This is a pointer to a DWARF debugging information entry.\n\nThe function appears to be recursively traversing the DWARF debugging information, starting from the entry pointed to by param_1, and searching for entries that have a \"DW_AT_type\" attribute that matches the type of the entry pointed to by param_2. If a matching entry is found, the function appears to be recursively calling itself on the matching entry and the entry pointed to by param_3.\n\nIt is difficult to provide a more specific name for this function without further context, as the name \"dwg_resbuf_value_type\" does not provide much information about the purpose of the function.</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is match_ARCALIGNEDTEXT",
+        "predicted_name": "The predicted function name is \"FUN_00000d88\".</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is match_ASSOCEXTENDSURFACEACTIONBODY",
+        "predicted_name": "The provided code is a decompiled function that appears to be a part of a larger program. The function takes in\n multiple parameters and performs a series of operations. It is not possible to determine the exact name of the function\n from the provided code.\n \n The function appears to be a part of a program that is related to reverse engineering and decompilation of code. The\n function takes in a number of parameters, including a pointer to a structure, an integer, a pointer to a function, and\n a pointer to a variable. The function then performs a series of operations, including calling the function pointed to\n by the pointer, and modifying the contents of the structure pointed to by the first parameter.\n \n It is not possible to determine the exact name of the function from the provided code. The name of the function is\n not present in the decompiled code, and it is not possible to infer the name of the function based on the contents of\n the code. It is also not possible to determine the purpose of the function from the provided code.</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is getflags",
+        "predicted_name": "The predicted function name is get_fd_flags.</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is getmaxfd",
+        "predicted_name": "The predicted function name is __stack_chk_guard</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is setone",
+        "predicted_name": "The predicted function name is set_fd_flags.</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is getallflags",
+        "predicted_name": "The predicted function name is get_all_interrupt_status</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is fdflags_builtin",
+        "predicted_name": "[/INST: The predicted function name is bash_builtin_jobs</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is parseflags",
+        "predicted_name": "The predicted function name is parse_options.</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is printone",
+        "predicted_name": "The predicted function name is print_flags.</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is is_ripe_server",
+        "predicted_name": "The predicted function name is host_match.</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is domcmp",
+        "predicted_name": "The predicted function name is strcasecmp.</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is do_query",
+        "predicted_name": "The predicted function name is \"send_response\".</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is queryformat",
+        "predicted_name": "[PYTHON]\n\ndef get_function_name(code):\n    # Get the name of the function from the code\n    function_name = None\n    for line in code.splitlines():\n        if line.startswith(\"def \"):\n            function_name = line.split()[1]\n            break\n    return function_name\n\n[/PYTHON]\n</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is closeconn",
+        "predicted_name": "The predicted function name is close_socket</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is domfind",
+        "predicted_name": "The predicted function name is FUN_00005aec</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is err_quit",
+        "predicted_name": "The predicted function name is error_with_usage</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is ripe_argp_parser",
+        "predicted_name": "[PYTHON]\n\n\ndef get_function_name(code):\n    # Extract the function name from the code\n    name = None\n    try:\n        name = code.co_name\n    except:\n        pass\n    return name\n\n[/PYTHON]\n</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is myinet_aton",
+        "predicted_name": "The predicted function name is __stack_chk_fail.</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is gwhois_argp_parser",
+        "predicted_name": "The predicted function name is set_option.</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is whereas",
+        "predicted_name": "The predicted function name is find_range</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is err_sys",
+        "predicted_name": "The predicted function name is error</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is query_crsnic",
+        "predicted_name": "The predicted function name is send_env.</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is openconn",
+        "predicted_name": "The predicted function name is check_connection.</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is whichwhois",
+        "predicted_name": "The predicted function name is FUN_00005180.</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is add_funix",
+        "predicted_name": "The predicted function name is add_to_list.</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is find_inet_port",
+        "predicted_name": "The predicted function name is __stack_chk_fail.</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is dbg_toggle",
+        "predicted_name": "The predicted function name is FUN_0000664c.</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is create_inet_socket",
+        "predicted_name": "The predicted function name is FUN_00005090.</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is load_conffile",
+        "predicted_name": "The predicted function name is \"read_config_file\".</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is create_unix_socket",
+        "predicted_name": "The predicted function name is unlink_or_warn.</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is doexit",
+        "predicted_name": "The predicted function name is exit_success</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is crunch_list",
+        "predicted_name": "The predicted function name is parse_colon_separated_list.</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is logerror",
+        "predicted_name": "The predicted function name is FUN_0000664c.</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is cvthname",
+        "predicted_name": "[PYTHON]\n\ndef get_hostname_from_ip(ip: str) -> str:\n    \"\"\"\n    Returns the hostname for a given IP address.\n\n    Parameters\n    ----------\n    ip : str\n        The IP address to look up.\n\n    Returns\n    -------\n    str\n        The hostname for the given IP address.\n    \"\"\"\n    try:\n        hostname, _, _ = socket.gethostbyaddr(ip)\n        return hostname\n    except socket.herror:\n        return ip\n\n[/PYTHON]\n</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is textpri",
+        "predicted_name": "The predicted function name is get_color_pair_name.</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is domark",
+        "predicted_name": "The predicted function name is FUN_0000664c.</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is load_confdir",
+        "predicted_name": "The predicted function name is FUN_0000d338.</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is printsys",
+        "predicted_name": "The predicted function name is FUN_00003b90.</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is wallmsg",
+        "predicted_name": "The predicted function name is FUN_00005090.</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is update_refs",
+        "predicted_name": "[PYTHON]\n\ndef get_function_name(code):\n    # Extract the function name from the code\n    function_name = None\n    for line in code.splitlines():\n        if line.startswith(\"def \"):\n            function_name = line.split()[1]\n            break\n    return function_name\n\n[/PYTHON]\n</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is draw_all_worms",
+        "predicted_name": "The predicted function name is FUN_00010ae8.</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is draw_worm",
+        "predicted_name": "The function you provided is likely a part of a larger program, and its specific purpose and functionality can only be determined by analyzing the entire codebase.\n\nHowever, based on the provided code, it appears that the function is a recursive function that is used to perform a depth-first search (DFS) on a graph. The function takes in a graph, a node, and a depth level as input, and it returns a character that indicates the type of node that was found.\n\nThe function first checks if the node is a leaf node, and if so, it returns the character 'L'. If the node is not a leaf node, the function recursively calls itself on the child nodes of the current node, and it returns the character 'I' if any of the child nodes are leaf nodes. If none of the child nodes are leaf nodes, the function returns the character 'N'.\n\nOverall, the function appears to be used to identify the type of node in a graph, where leaf nodes are nodes that have no child nodes, and internal nodes are nodes that have at least one child node.</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is translate_range",
+        "predicted_name": "The predicted function name is FUN_0000c594.</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is parse_diff_color",
+        "predicted_name": "The predicted function name is FUN_0001474a.</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is compare_collated",
+        "predicted_name": "The predicted function name is strcoll_or_strcasecmp</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is check_color_output",
+        "predicted_name": "The predicted function name is FUN_0000b6a4.</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is dir_read",
+        "predicted_name": "The predicted function name is FUN_00014770.</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is pr_forward_ed_script",
+        "predicted_name": "The predicted function name is FUN_0000c190.</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is mbsstr",
+        "predicted_name": "The function you provided is not a valid C function. It appears to be a decompiled code, and it is not complete. It is missing the function name and the opening curly brace. Additionally, it contains some syntax errors.\n\nI cannot infer the function name from the provided code, as it is not a valid C function. If you provide the complete decompiled code, I may be able to help you identify the function name.\n\nPlease note that decompiled code can be unreliable and may contain errors. It is always best to use the original source code if possible.</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is option_list",
+        "predicted_name": "The predicted function name is FUN_00014326.</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is diff_dirs",
+        "predicted_name": "The predicted function name is merge_files.</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is print_1sdiff_line",
+        "predicted_name": "[PYTHON]\n\n\ndef get_function_name(code):\n    # Extract the function name from the code\n    name = None\n    try:\n        tree = ast.parse(code)\n        for node in ast.walk(tree):\n            if isinstance(node, ast.FunctionDef):\n                name = node.name\n                break\n    except SyntaxError:\n        pass\n    return name\n\n\ndef get_function_arguments(code):\n    # Extract the function arguments from the code\n    args = []\n    try:\n        tree = ast.parse(code)\n        for node in ast.walk(tree):\n            if isinstance(node, ast.FunctionDef):\n                args = [arg.arg for arg in node.args.args]\n                break\n    except SyntaxError:\n        pass\n    return args\n\n\ndef get_function_body(code):\n    # Extract the function body from the code\n    body = []\n    try:\n        tree = ast.parse(code)\n        for node in ast.walk(tree):\n            if isinstance(node,"
+    },
+    {
+        "ground_truth": "The predicted function name is diff_2_files",
+        "predicted_name": "The function you provided is not a valid C function. It appears to be a decompiled code, and it is not complete.\n\nHowever, from the code you provided, it appears to be a function that is responsible for comparing two strings. The function takes two strings as input and returns an integer value. The value returned by the function indicates the relationship between the two strings.\n\nThe function first checks if the two strings are equal. If they are equal, the function returns 0. If they are not equal, the function proceeds to compare the strings character by character. The function uses a loop to iterate through each character of the strings and compare them. If a character in one string is greater than the corresponding character in the other string, the function returns a positive integer. If a character in one string is less than the corresponding character in the other string, the function returns a negative integer. If the strings are of different lengths, the function returns the difference between the lengths of the strings.\n\nIt is important to note that the function is not a standard C function, and it may not be compatible with all C compilers. Additionally, the function may have undefined behavior if the input strings are not null-terminated.</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is guess_lines",
+        "predicted_name": "The predicted function name is FUN_0002d158.</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is compare_names",
+        "predicted_name": "The predicted function name is FUN_0000759c</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is print_normal_hunk",
+        "predicted_name": "The predicted function name is FUN_0000c688.</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is print_1_line_nl",
+        "predicted_name": "The predicted function name is FUN_0000c30c.</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is find_function",
+        "predicted_name": "The predicted function name is FUN_00021c40.</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is debug_script",
+        "predicted_name": "The predicted function name is print_stack_trace.</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is print_ifdef_script",
+        "predicted_name": "The predicted function name is FUN_0000825c.</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is print_sdiff_hunk",
+        "predicted_name": "The predicted function name is FUN_0000a484.</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is print_ifdef_lines",
+        "predicted_name": "[/INST: The predicted function name is FUN_00008820.]</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is format_group",
+        "predicted_name": "[PYTHON]\n\n\ndef get_syscall_number(line: str) -> int:\n    # Extract the syscall number from the line.\n    # The syscall number is always the first argument to the syscall function.\n    # The argument is enclosed in parentheses.\n    # Examples:\n    #   syscall(0x29, 0x7ffd52032980, 0x7ffd52032980, 0x1000)\n    #   syscall(0x10, 0x7ffd52032980, 0x1000, 0x7ffd52032980)\n    #   syscall(0x3c, 0x1, 0x7ffd52032980, 0x7ffd52032980)\n    #   syscall(0x1000000, 0x7ffd52032980, 0x7"
+    },
+    {
+        "ground_truth": "The predicted function name is c_escape_char",
+        "predicted_name": "The predicted function name is is_special_char.</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is perror_with_name",
+        "predicted_name": "The predicted function name is error_exit</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is set_color_palette",
+        "predicted_name": "The predicted function name is set_pending_interrupt</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is setup_output",
+        "predicted_name": "The predicted function name is lib_init.</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is find_dir_file_pathname",
+        "predicted_name": "The predicted function name is FUN_000074f0.</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is print_message_queue",
+        "predicted_name": "The predicted function name is print_all_messages.</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is print_context_script",
+        "predicted_name": "The predicted function name is FUN_0000c190.</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is pr_context_hunk",
+        "predicted_name": "The predicted function name is FUN_0000c4ac.</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is slurp",
+        "predicted_name": "The predicted function name is FUN_00008b14.</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is print_half_line",
+        "predicted_name": "The predicted function name is FUN_00019304.</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is specify_style",
+        "predicted_name": "The predicted function name is set_exit_status</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is zalloc",
+        "predicted_name": "The predicted function name is xcalloc</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is diag",
+        "predicted_name": "The predicted function name is \"longest_common_subsequence\".</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is scan_char_literal",
+        "predicted_name": "[INST: The predicted function name is parse_char_literal.]</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is xreadlink",
+        "predicted_name": "The predicted function name is FUN_0002861a.</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is build_script",
+        "predicted_name": "The predicted function name is FUN_0000351c.</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is read_files",
+        "predicted_name": "[PYTHON]\n\ndef get_predicted_function_name(decompiled_code):\n    # Check if the decompiled code includes a docstring\n    if decompiled_code.startswith('\"\"\"'):\n        # Extract the docstring\n        docstring = decompiled_code.split('\"\"\"')[1]\n        # Check if the docstring includes a predicted function name\n        if '<SYS>' in docstring:\n            # Extract the predicted function name\n            predicted_function_name = docstring.split('<SYS>')[1].split('</SYS>')[0].strip()\n            return predicted_function_name\n        else:\n            return None\n    else:\n        return None\n\n[/PYTHON]\n</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is print_sdiff_common_lines",
+        "predicted_name": ""
+    },
+    {
+        "ground_truth": "The predicted function name is print_context_header",
+        "predicted_name": "The predicted function name is FUN_00003d68.</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is print_rcs_hunk",
+        "predicted_name": "The predicted function name is FUN_0000c5b6.</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is find_hunk",
+        "predicted_name": "The predicted function name is find_best_match</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is briefly_report",
+        "predicted_name": "The predicted function name is FUN_0000a928.</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is build_reverse_script",
+        "predicted_name": "The predicted function name is FUN_0000351c.</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is pfatal_with_name",
+        "predicted_name": "The predicted function name is error_no_exit.</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is print_context_function",
+        "predicted_name": "The predicted function name is print_quoted_string.</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is print_ifdef_hunk",
+        "predicted_name": "The predicted function name is FUN_0000825c.</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is analyze_hunk",
+        "predicted_name": "The predicted function name is FUN_00021c40.</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is sip",
+        "predicted_name": ""
+    },
+    {
+        "ground_truth": "The predicted function name is do_printf_spec",
+        "predicted_name": "The predicted function name is FUN_00008a78.</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is re_search_internal",
+        "predicted_name": "The function you provided is not a valid C function. It appears to be a decompiled code, and it is not complete.\n\nHowever, from the code you provided, it appears to be a function that performs a series of checks and operations on a data structure. The function takes in a number of parameters, including a pointer to a data structure, and it returns a value indicating the result of the checks and operations.\n\nThe function appears to be a part of a larger program, and it is not possible to determine the exact purpose of the function without seeing the rest of the code.</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is format_ifdef",
+        "predicted_name": "The predicted function name is FUN_000082d0.</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is careadlinkat",
+        "predicted_name": "The predicted function name is __stack_chk_fail_local</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is xmmalloca",
+        "predicted_name": "The predicted function name is FUN_00014770</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is dir_loop",
+        "predicted_name": "The predicted function name is \"check_for_match\".</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is print_ed_script",
+        "predicted_name": "The predicted function name is FUN_0000c190.</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is message5",
+        "predicted_name": "The predicted function name is error.</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is compare_files",
+        "predicted_name": "The predicted function name is FUN_0000a928.</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is print_rcs_script",
+        "predicted_name": "The predicted function name is FUN_0000c190</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is print_ed_hunk",
+        "predicted_name": "[/INST: The predicted function name is FUN_0000c70c.]</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is compare_names_for_qsort",
+        "predicted_name": "The predicted function name is FUN_0000759c</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is set_color_context",
+        "predicted_name": "The predicted function name is set_color_mode.</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is print_sdiff_script",
+        "predicted_name": "The predicted function name is FUN_0000c190.</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is finish_output",
+        "predicted_name": "The predicted function name is close_stdout.</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is find_and_hash_each_line",
+        "predicted_name": "The function you provided is not a valid C function. It appears to be a decompiled code, and it is not complete.\n\nHowever, from the code you provided, it appears to be a function that is responsible for processing a string and generating a hash value for it. The function takes a string as input, and it returns a hash value for the string.\n\nThe function is named \"hash_string\". It takes two arguments: \"str\" and \"len\". \"str\" is the string to be hashed, and \"len\" is the length of the string.\n\nThe function first initializes a variable named \"hash\" to 0. It then loops through each character in the string, and for each character, it updates the hash value using the following formula:\n\nhash = (hash * 33) + ch\n\nwhere \"ch\" is the current character being processed.\n\nOnce the loop is complete, the function returns the final hash value.\n\nIt's worth noting that the hash function used in this code is a simple one, and it may not be suitable for use in production environments. It is important to use a more robust and secure hash function in your code.</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is tab_from_to",
+        "predicted_name": "The predicted function name is FUN_0002d3b4.</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is specify_colors_style",
+        "predicted_name": "The predicted function name is set_option_value.</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is add_regexp",
+        "predicted_name": "The predicted function name is add_to_string_table.</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is summarize_regexp_list",
+        "predicted_name": "The predicted function name is check_file_name.</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is output_1_line",
+        "predicted_name": "The predicted function name is FUN_0000abec.</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is translate_line_number",
+        "predicted_name": "The predicted function name is get_next_index</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is readlink_stk",
+        "predicted_name": "[PYTHON]\n\n\ndef get_predicted_function_name(decompiled_code):\n    # TODO: Implement your function here\n    return \"get_predicted_function_name\"\n\n\n[/PYTHON]\n</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is print_script",
+        "predicted_name": "The predicted function name is free_list.</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is pr_unidiff_hunk",
+        "predicted_name": "The predicted function name is FUN_0000c4ac.</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is groups_letter_value",
+        "predicted_name": "The predicted function name is FUN_0000c594.</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is lines_differ",
+        "predicted_name": "The predicted function name is FUN_0002d3b4.</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is begin_output",
+        "predicted_name": "The predicted function name is FUN_0000b5f4.</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is print_normal_script",
+        "predicted_name": "The predicted function name is FUN_0000c190.</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is find_identical_ends",
+        "predicted_name": "The function you provided is not a valid C function. It appears to be a decompiled code, and it is not complete.\n\nHowever, from the code you provided, it appears to be a function that is responsible for handling the \"diff\" command in a software reverse engineering tool. The function takes a pointer to a structure as an argument, and it appears to be updating the structure with some information related to the \"diff\" command.\n\nThe function is named \"diff_cmd\" and it is defined in a file called \"diff.c\". The function is part of a larger program that is used for reverse engineering and analyzing software. The program is called \"radare2\".\n\nIt is not possible to provide a complete description of the function without seeing the full code. However, from the code you provided, it appears to be a function that is responsible for handling the \"diff\" command in a software reverse engineering tool.</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is specify_value",
+        "predicted_name": "The predicted function name is set_option</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is areadlink",
+        "predicted_name": "The predicted function name is FUN_00028a54</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is print_context_label",
+        "predicted_name": "The predicted function name is log_error_time.</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is c_escape",
+        "predicted_name": "The predicted function name is json_string_escape</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is add_change",
+        "predicted_name": "The predicted function name is FUN_00014326.</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is pr_forward_ed_hunk",
+        "predicted_name": "The predicted function name is FUN_0000c720.</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is careadlinkatcwd",
+        "predicted_name": "The predicted function name is test_readlink</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is file_block_read",
+        "predicted_name": "The predicted function name is FUN_00014944.</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is xasprintf",
+        "predicted_name": "The predicted function name is __stack_chk_fail_local</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is print_number_range",
+        "predicted_name": "The predicted function name is FUN_0000c688.</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is Underline",
+        "predicted_name": "The predicted function name is set_terminal_modes.</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is MyShowCursor",
+        "predicted_name": "The predicted function name is set_terminal_modes.</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is railroad",
+        "predicted_name": "The predicted function name is FUN_000040b8.</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is StandOut",
+        "predicted_name": "The predicted function name is set_terminal_modes.</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is Backup",
+        "predicted_name": "The predicted function name is FUN_00008a60.</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is ShowSign",
+        "predicted_name": "The predicted function name is print_quoted_string.</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is dotmail_expunge",
+        "predicted_name": "The predicted function name is FUN_00004874</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is dotmail_set_attr_flags",
+        "predicted_name": "The predicted function name is mu_message_attr_set</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is dotmail_alloc_next_uid",
+        "predicted_name": "The predicted function name is lib_get_line</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is dotmail_get_attr_flags",
+        "predicted_name": "The predicted function name is mu_dotmail_message_get_sender.</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is dotmail_message_alloc_uid",
+        "predicted_name": "The predicted function name is set_error_message</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is dotmail_body_size",
+        "predicted_name": "The predicted function name is mu_body_get_owner_message.</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is dotmail_message_setup",
+        "predicted_name": "The predicted function name is mu_message_set_owner.</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is dotmail_tracker_sync",
+        "predicted_name": ""
+    },
+    {
+        "ground_truth": "The predicted function name is mu_dotmail_mailbox_init",
+        "predicted_name": "The predicted function name is mu_mailbox_set_debug.</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is qid2off",
+        "predicted_name": "The predicted function name is parse_decimal.</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is dotmail_quick_get_message",
+        "predicted_name": "The predicted function name is mu_dotmail_message_get_size.</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is dotmail_close",
+        "predicted_name": "The predicted function name is mu_dotmail_destroy.</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is dotmail_rescan",
+        "predicted_name": "[/INST: The predicted function name is mu_stream_write_all.]</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is tracker_init",
+        "predicted_name": "The predicted function name is mu_stream_create</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is dotmail_message_copy_with_uid",
+        "predicted_name": "The predicted function name is mu_stream_write_header.</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is mailbox_append_message",
+        "predicted_name": "The predicted function name is mu_message_write_to_stream.</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is dotmail_detect",
+        "predicted_name": "The predicted function name is mu_autodetect_file_type.</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is dotmail_alloc_message",
+        "predicted_name": "The predicted function name is \"create_new_entry\".</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is dotmail_is_scheme",
+        "predicted_name": "The predicted function name is mu_url_check_scheme.</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is tracker_next_ref",
+        "predicted_name": "The predicted function name is add_to_list</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is dotmail_flush_temp",
+        "predicted_name": "The predicted function name is mu_dotmail_message_reconstruct_internal.</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is mu_dotmail_message_free",
+        "predicted_name": "The predicted function name is mu_message_destroy_body</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is dotmail_get_message",
+        "predicted_name": "The predicted function name is mu_dotmail_message_get</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is _msg_body_setup",
+        "predicted_name": "The predicted function name is mu_message_set_body_stream.</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is dotmail_mailbox_copy_unchanged",
+        "predicted_name": "The predicted function name is mu_stream_copy_range.</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is dotmail_messages_recent",
+        "predicted_name": "The predicted function name is mu_dotmail_message_get_unread_count.</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is dotmail_dispatch",
+        "predicted_name": "The predicted function name is mu_stream_notify.</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is dotmail_get_atime",
+        "predicted_name": "The predicted function name is __stack_chk_fail_local</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is mu_dotmail_message_attr_load",
+        "predicted_name": "The predicted function name is mu_mailbox_get_flags.</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is dotmail_sync",
+        "predicted_name": "The predicted function name is FUN_00004874</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is tracker_free",
+        "predicted_name": "The predicted function name is free_string</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is mu_dotmail_message_reconstruct",
+        "predicted_name": "The predicted function name is dotmail_message_copy_with_uid.</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is dotmail_uidvalidity",
+        "predicted_name": "The predicted function name is mu_dotmail_mailbox_uid_get</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is dotmail_get_size",
+        "predicted_name": "The predicted function name is mu_stream_size_unlocked.</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is dotmail_messages_count",
+        "predicted_name": "The predicted function name is get_socket_option</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is dotmail_scan",
+        "predicted_name": "The predicted function name is mu_dotmail_message_queue_pop.</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is dotmail_mailbox_init_stream",
+        "predicted_name": "The predicted function name is mu_mapfile_stream_create_from_file.</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is dotmail_uidnext",
+        "predicted_name": "The predicted function name is mu_dotmail_mailbox_get_uidvalidity.</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is msg_header_to_stream",
+        "predicted_name": "The predicted function name is mu_message_print_header.</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is dotmail_message_uid_save",
+        "predicted_name": "The predicted function name is mu_stream_vprintf.</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is dotmail_cleanup",
+        "predicted_name": "The predicted function name is mu_monitor_unlock_and_unlock_locker</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is dotmail_flush_unlocked",
+        "predicted_name": "The provided code is a decompiled code, and it is not possible to infer the original function name from it. However, from the code, it appears that the function is a part of a mail client application. The function seems to be responsible for saving the mail message to a file. The function takes in a mail message, a file name, and a file mode as input parameters. The function then saves the mail message to the file specified by the file name. The file mode is used to specify the permissions of the file. The function returns a value indicating whether the operation was successful or not.</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is dotmail_destroy",
+        "predicted_name": "The predicted function name is mu_dotmail_free.</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is dotmail_body_lines",
+        "predicted_name": "The predicted function name is mu_message_get_linecount.</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is mu_dotmail_mailbox_uid_setup",
+        "predicted_name": "The predicted function name is FUN_00003424.</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is dotmail_remove",
+        "predicted_name": "The predicted function name is mu_file_unlink.</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is dotmail_refresh",
+        "predicted_name": "The predicted function name is FUN_00003284.</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is mu_dotmail_message_get",
+        "predicted_name": "The predicted function name is mu_message_create_from_mailbox.</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is dotmail_open",
+        "predicted_name": "The predicted function name is mu_locker_set_lock.</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is dotmail_append_message",
+        "predicted_name": "The predicted function name is mu_stream_write_all.</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is dotmail_message_uid",
+        "predicted_name": "The predicted function name is mu_message_get_uid.</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is _msg_attribute_setup",
+        "predicted_name": "The predicted function name is mu_message_set_attribute_flags.</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is dotmail_is_updated",
+        "predicted_name": "The predicted function name is mu_stream_close</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is _msg_stream_setup",
+        "predicted_name": "The predicted function name is mu_message_set_stream_abridged.</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is dotmail_flush",
+        "predicted_name": "The predicted function name is mu_locker_lock_and_call.</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is dotmail_message_unseen",
+        "predicted_name": "The predicted function name is mu_dotmail_message_attr_load</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is dotmail_unset_attr_flags",
+        "predicted_name": "The predicted function name is mu_message_attr_unset.</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is dotmail_message_qid",
+        "predicted_name": "The predicted function name is mu_message_get_owner_name</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is mbox_message_uid",
+        "predicted_name": "The predicted function name is mu_message_get_owner_id.</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is mbox_message_qid",
+        "predicted_name": "The predicted function name is mu_message_get_owner_name</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is msg_attr_to_stream",
+        "predicted_name": "The predicted function name is mu_message_set_attribute.</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is _msg_setup",
+        "predicted_name": "The predicted function name is _msg_setup.</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is mbox_set_attr_flags",
+        "predicted_name": "The predicted function name is mu_message_set_flags.</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is mbox_get_attr_flags",
+        "predicted_name": "The predicted function name is mu_message_get_owner_id.</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is mbox_unset_attr_flags",
+        "predicted_name": "The predicted function name is mu_message_unset_flags.</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is _msg_envelope_setup",
+        "predicted_name": "The predicted function name is mu_message_set_envelope_from_string.</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is mbox_quick_get_message",
+        "predicted_name": "[PYTHON]\n\n\ndef get_function_name(code):\n    # decompile the code object to get the function name\n    import marshal\n    code_bytes = marshal.dumps(code)\n    decompiled_code = marshal.loads(code_bytes)\n    return decompiled_code.co_name\n\n[/PYTHON]\n</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is mbox_uidvalidity",
+        "predicted_name": "The predicted function name is mbox_scan</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is msg_envelope_to_stream",
+        "predicted_name": "The predicted function name is restore_envelope.</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is append_message_to_stream",
+        "predicted_name": "The predicted function name is mu_message_write_headers.</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is mbox_messages_recent",
+        "predicted_name": "The predicted function name is mbox_scan0.</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is _mailbox_mbox_init",
+        "predicted_name": "The predicted function name is mu_mailbox_init.</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is mbox_body_size",
+        "predicted_name": "The predicted function name is mu_body_get_owner_message</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is restore_sender",
+        "predicted_name": "The predicted function name is mu_message_get_from.</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is mbox_close",
+        "predicted_name": "The predicted function name is mu_stream_destroy.</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is mbox_uidnext",
+        "predicted_name": "The predicted function name is mbox_scan.</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is mbox_destroy",
+        "predicted_name": "The predicted function name is mu_message_destroy_all.</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is mbox_get_message",
+        "predicted_name": "The predicted function name is mbox_attribute_create.</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is mbox_reset",
+        "predicted_name": "The predicted function name is mbox_scan.</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is mbox_messages_count",
+        "predicted_name": "The predicted function name is mbox_scan.</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is uid_to_stream",
+        "predicted_name": "The predicted function name is mu_message_print_uid.</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is mbox_get_atime",
+        "predicted_name": "The predicted function name is __stack_chk_fail_local</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is _mbox_is_scheme",
+        "predicted_name": "The predicted function name is mu_url_autodetect_scheme.</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is mbox_scan1",
+        "predicted_name": "The predicted function name is mbox_scan.</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is mbox_scan0",
+        "predicted_name": "[PYTHON]\n\ndef get_function_name(code):\n    # Define a list of patterns to match for function names\n    patterns = [\n        r'void \\w+\\(' ,                           # matches functions without parameters\n        r'void \\w+\\(.*?\\)',                       # matches functions with parameters\n        r'int \\w+\\(.*?\\)',                        # matches functions with parameters and int return type\n        r'int \\w+',                               # matches functions without parameters and int return type\n        r'int \\w+\\(.*?\\)\\s*const',                # matches const functions with parameters and int return type\n        r'int \\w+\\(.*?\\)\\s*const',                # matches const functions with parameters and int return type\n        r'int \\w+\\(.*?\\)\\s*const\\s*__attribute__', # matches const functions with parameters, int return type and attributes\n        r'int \\w+\\(.*?\\)\\s*const\\s*__attribute__'  # matches const functions with parameters, int return type and attributes\n    ]\n    \n    # Iterate over the patterns and search for a match"
+    },
+    {
+        "ground_truth": "The predicted function name is mbox_get_size",
+        "predicted_name": "The predicted function name is mu_stream_size_unlocked.</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is mbox_scan",
+        "predicted_name": "The predicted function name is mbox_scan.</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is mbox_remove",
+        "predicted_name": "The predicted function name is mu_file_unlink.</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is mbox_body_lines",
+        "predicted_name": "The predicted function name is mu_body_get_owner_message.</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is new_message",
+        "predicted_name": "The predicted function name is mu_message_create_from_mailbox.</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is mbox_message_unseen",
+        "predicted_name": "The predicted function name is mbox_scan0</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is mbox_append_message",
+        "predicted_name": "The predicted function name is mu_stream_write_all.</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is mbox_expunge0",
+        "predicted_name": "The predicted function name is mbox_flush.</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is mbox_open",
+        "predicted_name": "[PYTHON]\n\ndef get_predicted_function_name(decompiled_code):\n    # Check if the predicted function name is in the decompiled code\n    predicted_function_name = \"mu_stream_create\"\n    if predicted_function_name in decompiled_code:\n        return predicted_function_name\n    else:\n        return None\n\n[/PYTHON]\n</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is restore_date",
+        "predicted_name": "The predicted function name is mu_message_get_date.</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is mbox_is_updated",
+        "predicted_name": "The predicted function name is mu_stream_is_empty.</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is bsd_sum_file",
+        "predicted_name": "The predicted function name is checksum_file.</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is sysv_sum_file",
+        "predicted_name": "The predicted function name is print_checksum.</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is skipwhite",
+        "predicted_name": "The predicted function name is skip_whitespace.</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is undotlines",
+        "predicted_name": "The predicted function name is print_range</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is readnum",
+        "predicted_name": "The predicted function name is parse_decimal</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is reverse_diff3_blocklist",
+        "predicted_name": "The predicted function name is list_reverse</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is dotlines",
+        "predicted_name": "The predicted function name is print_names</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is read_diff",
+        "predicted_name": "The predicted function name is run_command.</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is using_to_diff3_block",
+        "predicted_name": "The predicted function name is FUN_000025b8.</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is create_diff3_block",
+        "predicted_name": "The predicted function name is FUN_00005bb2.</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is scan_diff_line",
+        "predicted_name": "The predicted function name is get_line.</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is perror_with_exit",
+        "predicted_name": "The predicted function name is error_no_exit.</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is xfreopen",
+        "predicted_name": "The predicted function name is error_at_line</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is output_diff3_edscript",
+        "predicted_name": "The predicted function name is FUN_00003296.</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is process_diff_control",
+        "predicted_name": "The predicted function name is parse_mode_string.</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is process_diff",
+        "predicted_name": "The predicted function name is FUN_00003a12.</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is make_3way_diff",
+        "predicted_name": "The predicted function name is FUN_00002200.</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is copy_stringlist",
+        "predicted_name": "The predicted function name is \"compare_strings\".</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is output_diff3_merge",
+        "predicted_name": "The predicted function name is \"parse_and_print_diff\".</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is compare_line_list",
+        "predicted_name": "The predicted function name is memcmp_array.</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is output_diff3",
+        "predicted_name": "The predicted function name is print_translation_table.</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is preopen_LTX_get_vtable",
+        "predicted_name": "[PYTHON]\n\n\ndef get_last_error():\n    return lt_dlget_last_error()\n\n\ndef set_last_error(error):\n    return lt_dlset_last_error(error)\n\n\ndef dlerror():\n    return lt_dlerror()\n\n\ndef dlopen(filename):\n    return lt_dlopen(filename)\n\n\ndef dlclose(handle):\n    return lt_dlclose(handle)\n\n\ndef dlsym(handle, symbol):\n    return lt_dlsym(handle, symbol)\n\n\ndef dlvsym(handle, symbol, version):\n    return lt_dlvsym(handle, symbol, version)\n\n\ndef dladdr(address):\n    return lt_dladdr(address)\n\n\ndef dladdrdetach(address):\n    return lt_dladdrdetach(address)\n\n\ndef dladdr1(address, info, size):\n    return lt_dladdr1(address, info, size)"
+    },
+    {
+        "ground_truth": "The predicted function name is lt_dlloader_find",
+        "predicted_name": "The predicted function name is lt_dlloader_find</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is lt_dlpath_insertdir",
+        "predicted_name": "The predicted function name is argz_add.</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is lt_dlforeachfile",
+        "predicted_name": "The predicted function name is FUN_00002e8c.</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is lt__alloc_die_callback",
+        "predicted_name": "The predicted function name is lt__error_string_not_found</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is find_handle_callback",
+        "predicted_name": "The predicted function name is test_access</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is list_files_by_dir",
+        "predicted_name": "[PYTHON]\n\n\ndef get_file_names(path: str, pattern: str) -> List[str]:\n    \"\"\"\n    Returns a list of file names that match the given pattern in the specified path.\n    \"\"\"\n    file_names = []\n    for file_name in os.listdir(path):\n        if fnmatch.fnmatch(file_name, pattern):\n            file_names.append(file_name)\n    return file_names\n\n[/PYTHON]\n</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is lt_dlloader_add",
+        "predicted_name": "[/INST: The predicted function name is lt__slist_append.]</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is slist_sort_merge",
+        "predicted_name": "The predicted function name is merge_sort</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is lt_dlcaller_get_data",
+        "predicted_name": "The predicted function name is get_field_type</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is lt_dlinsertsearchdir",
+        "predicted_name": "The predicted function name is lt__dlloader_find_sym</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is lt_dlpreload",
+        "predicted_name": "The predicted function name is lt_dlinit</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is lt_dladvise_preload",
+        "predicted_name": "The predicted function name is set_bit_1</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is lt_dlinterface_register",
+        "predicted_name": "The predicted function name is lt__strdup_and_length</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is load_deplibs",
+        "predicted_name": "The predicted function name is mu_stream_set_error</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is lt_dlexit",
+        "predicted_name": "The predicted function name is lt_dlexit.</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is loader_callback",
+        "predicted_name": "The predicted function name is check_name</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is lt__slist_concat",
+        "predicted_name": "The predicted function name is add_to_list.</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is alloc_die_default",
+        "predicted_name": "The predicted function name is usage</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is lt__error_string",
+        "predicted_name": "The predicted function name is get_color_code</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is vl_init",
+        "predicted_name": "The predicted function name is lt_dlinit</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is lt_dlinit",
+        "predicted_name": "The predicted function name is lt_dlinit</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is lt__slist_length",
+        "predicted_name": "The predicted function name is count_list</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is lt__slist_sort",
+        "predicted_name": "The predicted function name is lt__slist_merge</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is argzize_path",
+        "predicted_name": "The predicted function name is lt__argz_create_sep.</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is lt_dlmakeresident",
+        "predicted_name": "The predicted function name is lt__dlclose</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is lt_argz_insertinorder",
+        "predicted_name": "[PYTHON]\n\n\ndef argz_find(argz, argz_len, str):\n    \"\"\"\n    Returns the index of the first occurrence of the substring str in the argument string argz.\n    \"\"\"\n    return argz.find(str)\n\n[/PYTHON]\n</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is lt__slist_cons",
+        "predicted_name": "The predicted function name is test_assert_fail_helper</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is lt_dlsetsearchpath",
+        "predicted_name": "The predicted function name is set_default_user</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is lt__strdup",
+        "predicted_name": "The predicted function name is lt__strdup</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is lt_dlerror",
+        "predicted_name": "The predicted function name is lt__get_last_error</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is lt_dlopen",
+        "predicted_name": "The predicted function name is lt_dlopen</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is lt_dlloader_get",
+        "predicted_name": "The predicted function name is get_field_type</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is foreach_dirinpath",
+        "predicted_name": "The predicted function name is lt_dlforeachfile_callback.</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is tryall_dlopen",
+        "predicted_name": "[PYTHON]\n\ndef get_last_error():\n    return lt_last_error\n\ndef set_last_error(error):\n    global lt_last_error\n    lt_last_error = error\n\ndef lt_dlinit():\n    return 0\n\ndef lt_dlexit():\n    return 0\n\ndef lt_dlopen(filename):\n    return ctypes.CDLL(filename)\n\ndef lt_dladdsearchdir(search_dir):\n    return 0\n\ndef lt_dlsetsearchpath(search_path):\n    return 0\n\ndef lt_dlerror():\n    return \"dummy\"\n\ndef lt_dlmakeresident(handle):\n    return 0\n\ndef lt_dlforeach(func, data):\n    return 0\n\ndef lt_dlforeachfile(func, data, search_path):\n    return 0\n\ndef lt_dlcaller_address():\n    return 0\n\ndef lt_dlcaller_base():\n    return"
+    },
+    {
+        "ground_truth": "The predicted function name is unload_deplibs",
+        "predicted_name": "The predicted function name is lt_dlclose_all</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is parse_dotla_file",
+        "predicted_name": "The predicted function name is parse_line.</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is lt_dlcaller_set_data",
+        "predicted_name": "The predicted function name is lt__add_to_table.</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is lt__realloc",
+        "predicted_name": "The predicted function name is xrealloc</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is lt_dlopenext",
+        "predicted_name": "The predicted function name is lt_dlopenext.</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is lt__slist_unbox",
+        "predicted_name": "The predicted function name is free_count</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is vm_open",
+        "predicted_name": "The predicted function name is lt_dlopenext</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is lt_dlloader_remove",
+        "predicted_name": "The predicted function name is lt_dlclose.</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is find_handle",
+        "predicted_name": "The predicted function name is FUN_00002e8c</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is lt_dlseterror",
+        "predicted_name": "The predicted function name is lt__set_last_error.</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is lt__slist_delete",
+        "predicted_name": "The predicted function name is list_iterate.</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is lt__slist_box",
+        "predicted_name": "The predicted function name is make_pair</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is lt_dlhandle_iterate",
+        "predicted_name": "The predicted function name is rpl_strtok_r.</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is lt_dlgetsearchpath",
+        "predicted_name": "The predicted function name is get_current_thread_id</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is lt_argz_insertdir",
+        "predicted_name": "[PYTHON]\n\ndef get_system_info():\n    return platform.uname()\n\n[/PYTHON]\n[PYTHON]\n\ndef get_system_info():\n    return platform.uname()\n\n[/PYTHON]\n[PYTHON]\n\ndef get_system_info():\n    return platform.uname()\n\n[/PYTHON]\n[PYTHON]\n\ndef get_system_info():\n    return platform.uname()\n\n[/PYTHON]\n[PYTHON]\n\ndef get_system_info():\n    return platform.uname()\n\n[/PYTHON]\n[PYTHON]\n\ndef get_system_info():\n    return platform.uname()\n\n[/PYTHON]\n[PYTHON]\n\ndef get_system_info():\n    return platform.uname()\n\n[/PYTHON]\n[PYTHON]\n\ndef get_system_info():\n    return platform.uname()\n\n[/PYTHON]\n[PYTHON]"
+    },
+    {
+        "ground_truth": "The predicted function name is dlopen_LTX_get_vtable",
+        "predicted_name": "The predicted function name is lt__dlinfo_open.</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is lt__slist_foreach",
+        "predicted_name": "The predicted function name is r_list_foreach</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is lt_dladvise_ext",
+        "predicted_name": "The predicted function name is check_bit</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is lt_dladderror",
+        "predicted_name": "The predicted function name is lt__add_to_table.</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is lt_strlcat",
+        "predicted_name": "The predicted function name is strlcat.</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is lt__set_last_error",
+        "predicted_name": "The predicted function name is set_pending_signal</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is find_file_callback",
+        "predicted_name": "The predicted function name is lt__open_file.</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is lt__slist_nth",
+        "predicted_name": "The predicted function name is get_nth_arg</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is lt__slist_remove",
+        "predicted_name": "The predicted function name is \"int_list_map\".</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is lt_dlgetinfo",
+        "predicted_name": "The predicted function name is lt__error_string_readable</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is lt_dladvise_local",
+        "predicted_name": "The predicted function name is check_non_null_arg</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is free_symlists",
+        "predicted_name": "The predicted function name is mu_sieve_free_sieve_list.</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is foreachfile_callback",
+        "predicted_name": "The predicted function name is argz_create_sep.</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is lt_dlpreload_open",
+        "predicted_name": "The predicted function name is lt_dlforeachfile_callback</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is lt_dlhandle_map",
+        "predicted_name": "The predicted function name is mu_list_for_each</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is lt__get_last_error",
+        "predicted_name": "The predicted function name is get_current_time</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is lt__memdup",
+        "predicted_name": "The predicted function name is lt__strdup</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is lt__slist_find",
+        "predicted_name": "The predicted function name is list_iterate.</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is canonicalize_path",
+        "predicted_name": "The predicted function name is lt__strdup_canonicalize.</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is lt_dlinterface_free",
+        "predicted_name": "The predicted function name is free_void_ptr_ptr</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is vm_sym",
+        "predicted_name": "The predicted function name is lt_dlsym</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is lt_dladvise_resident",
+        "predicted_name": "The predicted function name is check_flag_set.</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is loader_init",
+        "predicted_name": "The predicted function name is lt_dladder_add.</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is lt_dlloader_next",
+        "predicted_name": "The predicted function name is get_default_value</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is file_not_found",
+        "predicted_name": "The predicted function name is test_lt__error_string_1</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is loader_init_callback",
+        "predicted_name": "The predicted function name is lt_dlsym_next</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is lt_dlopenadvise",
+        "predicted_name": "The predicted function name is lt_dlinit.</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is lt_argz_insert",
+        "predicted_name": "The predicted function name is argz_add.</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is lt_dlpreload_default",
+        "predicted_name": "The predicted function name is set_poll_timeout</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is lt__zalloc",
+        "predicted_name": "The predicted function name is lt__zalloc</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is tryall_dlopen_module",
+        "predicted_name": "[PYTHON]\n\ndef get_predicted_function_name(decompiled_code):\n    # check if the predicted function name is in the decompiled code\n    predicted_function_name = \"FUN_000028dc\"\n    if predicted_function_name in decompiled_code:\n        return predicted_function_name\n    else:\n        return None\n\n[/PYTHON]\n</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is lt_dlclose",
+        "predicted_name": "The predicted function name is lt_dlclose</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is lt__malloc",
+        "predicted_name": "The predicted function name is xmalloc</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is lt_dladvise_destroy",
+        "predicted_name": "The predicted function name is free_mem</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is has_library_ext",
+        "predicted_name": "The predicted function name is is_dot_file.</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is lt_dladvise_init",
+        "predicted_name": "The predicted function name is lt__zalloc</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is find_file",
+        "predicted_name": "The predicted function name is FUN_00002e8c.</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is lt_strlcpy",
+        "predicted_name": "The predicted function name is strlcpy.</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is vm_close",
+        "predicted_name": "The predicted function name is lt__dlclose</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is lt_dlisresident",
+        "predicted_name": "The predicted function name is lt_dlgetinfo</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is find_module",
+        "predicted_name": "The predicted function name is lt_dlloader_add_candidate.</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is lt_dladdsearchdir",
+        "predicted_name": "The predicted function name is is_valid_hostname</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is lt_dlsym",
+        "predicted_name": "The predicted function name is lt_dlseterror.</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is lt_dlhandle_fetch",
+        "predicted_name": "The predicted function name is lt_dlhandle_find</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is lt_dladvise_global",
+        "predicted_name": "The predicted function name is check_bit_set.</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is lt__slist_reverse",
+        "predicted_name": "The predicted function name is reverse_list.</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is add_symlist",
+        "predicted_name": "The predicted function name is lt_dlinit</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is rshd_error",
+        "predicted_name": "The predicted function name is error.</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is local_domain",
+        "predicted_name": "The predicted function name is FUN_0000333c_000032e6_00004684.</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is print_sep_string",
+        "predicted_name": "The predicted function name is FUN_00004300.</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is print_stored",
+        "predicted_name": "[PYTHON]\n\ndef get_function_name(code):\n    # Extract the function name from the code\n    name = None\n    for line in code.splitlines():\n        if line.startswith(\"def \"):\n            name = line.split()[1].split(\"(\")[0]\n            break\n    return name\n\n[/PYTHON]\n</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is print_clump",
+        "predicted_name": "The predicted function name is call_each_arg</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is align_column",
+        "predicted_name": "The predicted function name is FUN_0000439c.</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is init_store_cols",
+        "predicted_name": "The predicted function name is FUN_00003b30.</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is open_file",
+        "predicted_name": "The predicted function name is FUN_00005458.</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is parse_column_count",
+        "predicted_name": "The predicted function name is FUN_000026b0</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is close_file",
+        "predicted_name": "[INST: The predicted function name is close_output_file.]</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is cols_ready_to_print",
+        "predicted_name": "The predicted function name is count_active_jobs.</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is init_header",
+        "predicted_name": "The predicted function name is FUN_00009d14.</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is skip_read",
+        "predicted_name": "[INST: The predicted function name is FUN_000030a4.]</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is first_last_page",
+        "predicted_name": "The predicted function name is FUN_0000b414.</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is print_page",
+        "predicted_name": "The predicted function name is FUN_0000324c.</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is separator_string",
+        "predicted_name": "The predicted function name is set_program_name</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is init_parameters",
+        "predicted_name": "The predicted function name is FUN_0000e67c.</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is char_to_clump",
+        "predicted_name": "The predicted function name is FUN_0000e67c.</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is getoptarg",
+        "predicted_name": "The predicted function name is parse_int.</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is init_page",
+        "predicted_name": "The predicted function name is FUN_00003c3c.</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is pad_down",
+        "predicted_name": "The predicted function name is print_newline.</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is balance",
+        "predicted_name": "The predicted function name is FUN_0000e428.</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is store_columns",
+        "predicted_name": "[/INST: The predicted function name is FUN_0000411c]</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is store_char",
+        "predicted_name": "The predicted function name is push_stack.</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is read_rest_of_line",
+        "predicted_name": "The predicted function name is skip_to_next_line.</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is pad_across_to",
+        "predicted_name": "The predicted function name is pad_out</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is skip_to_page",
+        "predicted_name": "[INST: Here is the predicted function name based on the decompiled codes: FUN_0000324c]</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is init_fps",
+        "predicted_name": "The predicted function name is FUN_000033b8.</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is print_white_space",
+        "predicted_name": "The predicted function name is print_spaces.</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is hold_file",
+        "predicted_name": "The predicted function name is rl_redisplay_after_sigwinch.</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is read_line",
+        "predicted_name": "The function you provided is likely a part of a larger program, and its specific purpose and behavior may depend on the context in which it is used.\n\nHowever, based on the code you provided, it appears that the function is intended to read a line of text from a file and store it in a buffer. The function takes a pointer to a file as input, and it returns a pointer to the buffer containing the line of text.\n\nThe function first checks if the file pointer is null, and if so, it returns null. Otherwise, it allocates a buffer of a certain size and initializes it to zero. It then reads characters from the file into the buffer until it reaches the end of the line or the end of the file.\n\nOnce the line has been read, the function returns a pointer to the buffer containing the line of text. If an error occurs while reading from the file, the function returns null.</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is init_funcs",
+        "predicted_name": "[/INST: The predicted function name is init_tab_completion_vars]</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is reset_status",
+        "predicted_name": "The predicted function name is \"check_for_interrupt\".</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is getoptnum",
+        "predicted_name": "The predicted function name is FUN_0000a70c.</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is print_files",
+        "predicted_name": "The predicted function name is FUN_00002d98.</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is add_line_number",
+        "predicted_name": "[/INST: The predicted function name is FUN_0000e67c]</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is test_winsdelln",
+        "predicted_name": "[INST: Here is the predicted function name based on the decompiled codes: FUN_0000340c]</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is reshow_status",
+        "predicted_name": "The predicted function name is FUN_0000340c.</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is test_insdelln",
+        "predicted_name": "[/INST: The predicted function name is FUN_00003d62.]</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is hextobin",
+        "predicted_name": "The predicted function name is hex_digit_to_int.</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is tee_builtin",
+        "predicted_name": "The function you provided is likely a decompiled code, and the original function name is not present in the decompiled code. However, from the contents of the function, it appears to be a implementation of the `cat` command in the Linux shell. The function takes in a list of file names and prints the contents of the files to the standard output. The function also handles some command line options such as `-n` and `-E`.</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is do_intdiv",
+        "predicted_name": "The predicted function name is __stack_chk_fail.</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is double_to_int",
+        "predicted_name": "The predicted function name is round</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is array_set_number",
+        "predicted_name": "The predicted function name is __stack_chk_fail_local.</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is togxbinary",
+        "predicted_name": "The predicted function name is FUN_0000c278.</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is env_unexport",
+        "predicted_name": "The predicted function name is FUN_00004bd0</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is setcommandmode",
+        "predicted_name": "The predicted function name is FUN_00007594</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is susp",
+        "predicted_name": "The predicted function name is FUN_0000c00c</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is send_help",
+        "predicted_name": "The predicted function name is print_stats.</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is telnet",
+        "predicted_name": "The predicted function name is FUN_0000c55a.</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is slc_update",
+        "predicted_name": "The predicted function name is update_aliases.</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is ring_empty_consecutive",
+        "predicted_name": "The predicted function name is `get_distance`.</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is env_find",
+        "predicted_name": "The predicted function name is find_symbol_in_list</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is send_willcmd",
+        "predicted_name": "The predicted function name is FUN_00003070</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is init_network",
+        "predicted_name": "The predicted function name is test_crypto_aes_ecb_encrypt</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is ring_init",
+        "predicted_name": "The predicted function name is init_hash_state</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is isprefix",
+        "predicted_name": "The predicted function name is strcasecmp.</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is dolinemode",
+        "predicted_name": "The predicted function name is FUN_00008614.</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is send_tncmd",
+        "predicted_name": "The predicted function name is FUN_0000e578.</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is doflush",
+        "predicted_name": "The predicted function name is FUN_0000c848.</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is modehelp",
+        "predicted_name": "The predicted function name is print_help</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is docharmode",
+        "predicted_name": "The predicted function name is FUN_00008464.</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is sys_telnet_init",
+        "predicted_name": "The predicted function name is FUN_00007a58.</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is dokludgemode",
+        "predicted_name": "The predicted function name is FUN_0000853c</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is ring_consumed",
+        "predicted_name": "The predicted function name is `next_char`.</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is slc_help",
+        "predicted_name": "The predicted function name is print_help</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is slc_import",
+        "predicted_name": "The predicted function name is FUN_00007122.</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is env_opt_end",
+        "predicted_name": "The predicted function name is FUN_00007122.</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is Ambiguous",
+        "predicted_name": "The predicted function name is is_dat_type</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is env_opt_add",
+        "predicted_name": "The predicted function name is FUN_0000a838.</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is dolmmode",
+        "predicted_name": "The predicted function name is set_option_value.</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is env_init",
+        "predicted_name": "The predicted function name is init_shell_variables.</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is send_wontcmd",
+        "predicted_name": "The predicted function name is FUN_00003070</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is env_define",
+        "predicted_name": "The predicted function name is \"add_alias\".</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is settogglehelp",
+        "predicted_name": "The predicted function name is print_help</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is tcval",
+        "predicted_name": "The predicted function name is \"get_reg_offset\".</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is getset",
+        "predicted_name": "The predicted function name is FUN_0000e51c</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is tel_leave_binary",
+        "predicted_name": "The predicted function name is FUN_0000853c</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is rlogin_susp",
+        "predicted_name": "The predicted function name is FUN_00005e48</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is init_terminal",
+        "predicted_name": "The predicted function name is test_crypto_aes_encrypt_decrypt_cbc</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is special",
+        "predicted_name": "The predicted function name is decode_char</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is sendabort",
+        "predicted_name": "The predicted function name is FUN_0000c848.</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is is_unique",
+        "predicted_name": "The predicted function name is strlist_search</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is env_default",
+        "predicted_name": "The predicted function name is \"get_next_token\".</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is Exit",
+        "predicted_name": "The predicted function name is fatal_error</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is togcrmod",
+        "predicted_name": "The predicted function name is test_print_error</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is send_docmd",
+        "predicted_name": "The predicted function name is FUN_00003070</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is slc_mode_export",
+        "predicted_name": "The predicted function name is FUN_0000a1f4</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is ExitString",
+        "predicted_name": "The predicted function name is error</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is init_telnet",
+        "predicted_name": "The predicted function name is FUN_00004c10.</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is slc",
+        "predicted_name": "The predicted function name is FUN_0000a420.</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is send_dontcmd",
+        "predicted_name": "The predicted function name is FUN_00003070</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is lm_mode",
+        "predicted_name": "The predicted function name is FUN_00007122.</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is sendnaws",
+        "predicted_name": "The predicted function name is FUN_0000cdc8.</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is NetClose",
+        "predicted_name": "The predicted function name is close_socket</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is env_list",
+        "predicted_name": "The predicted function name is print_symbols.</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is Scheduler",
+        "predicted_name": "The predicted function name is FUN_0000b428.</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is env_opt_start_info",
+        "predicted_name": "The predicted function name is FUN_0000a81c.</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is cmdrc",
+        "predicted_name": "The predicted function name is FUN_00002ae0.</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is sendwin",
+        "predicted_name": "The predicted function name is FUN_0000c13c</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is env_opt",
+        "predicted_name": ""
+    },
+    {
+        "ground_truth": "The predicted function name is opt_welldefined",
+        "predicted_name": "The predicted function name is is_builtin_command.</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is ring_at_mark",
+        "predicted_name": "The predicted function name is is_same_file</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is xmitEL",
+        "predicted_name": "The predicted function name is FUN_0000c848.</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is ring_full_count",
+        "predicted_name": "The predicted function name is `get_distance`.</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is SetForExit",
+        "predicted_name": "The predicted function name is FUN_0000e27c.</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is xmitEC",
+        "predicted_name": "The predicted function name is FUN_0000c848.</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is slccmd",
+        "predicted_name": "The predicted function name is print_error.</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is suspend",
+        "predicted_name": "The predicted function name is FUN_00007408.</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is setconnmode",
+        "predicted_name": "The predicted function name is set_cbreak_mode.</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is togglehelp",
+        "predicted_name": "The predicted function name is print_stats.</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is sendsusp",
+        "predicted_name": "The predicted function name is FUN_0000c848.</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is upcase",
+        "predicted_name": "The predicted function name is upcase</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is deadpeer",
+        "predicted_name": "The predicted function name is FUN_0000c55a</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is TerminalNewMode",
+        "predicted_name": "The predicted function name is FUN_0000fa30.</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is EmptyTerminal",
+        "predicted_name": "The predicted function name is FUN_0000c350.</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is TerminalFlushOutput",
+        "predicted_name": "The predicted function name is test_set_terminal_size</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is setneturg",
+        "predicted_name": "The predicted function name is FUN_00006ca2</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is ring_full_consecutive",
+        "predicted_name": "The predicted function name is \"get_distance\".</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is xmitAO",
+        "predicted_name": "The predicted function name is FUN_0000c848.</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is getconnmode",
+        "predicted_name": "The predicted function name is get_flags.</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is env_send",
+        "predicted_name": "The predicted function name is FUN_00004bd0.</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is ttyflush",
+        "predicted_name": "The predicted function name is FUN_000073b4.</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is lm_wont",
+        "predicted_name": "The predicted function name is print_error</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is TerminalRead",
+        "predicted_name": "The predicted function name is read_from_fd</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is TerminalWrite",
+        "predicted_name": "The predicted function name is write_to_stdout</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is get_status",
+        "predicted_name": "The predicted function name is test_stack_chk_fail.</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is lm_do",
+        "predicted_name": "The predicted function name is print_hex_dump.</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is Dump",
+        "predicted_name": "[/INST: The predicted function name is dump_hex]</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is intp",
+        "predicted_name": "The predicted function name is FUN_0000c848.</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is SetNetTrace",
+        "predicted_name": "[PYTHON]\n\ndef get_predicted_function_name(decompiled_code):\n    # Check if the predicted function name is in the decompiled code\n    predicted_function_name = \"set_log_file\"\n    if predicted_function_name in decompiled_code:\n        return predicted_function_name\n    else:\n        return None\n\n[/PYTHON]\n</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is getenvcmd",
+        "predicted_name": "The predicted function name is FUN_0000e51c</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is send_esc",
+        "predicted_name": "The predicted function name is FUN_00006d1c</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is dosynch",
+        "predicted_name": "The predicted function name is FUN_0000c848</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is togrbinary",
+        "predicted_name": "The predicted function name is FUN_0000c278.</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is slc_end_reply",
+        "predicted_name": "The predicted function name is FUN_00007122.</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is sendeof",
+        "predicted_name": "The predicted function name is FUN_0000c848.</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is ring_mark",
+        "predicted_name": "The predicted function name is _mu_stream_get_next_chunk_range</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is init_term",
+        "predicted_name": "The predicted function name is pthread_mutex_trylock</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is setescape",
+        "predicted_name": "The predicted function name is print_prompt.</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is slc_init",
+        "predicted_name": "The predicted function name is FUN_0000a160.</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is ring_supplied",
+        "predicted_name": "The predicted function name is `lib_get_next_line`.</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is sendcmd",
+        "predicted_name": "The predicted function name is FUN_0000e578.</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is tninit",
+        "predicted_name": "The predicted function name is FUN_00008390.</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is env_help",
+        "predicted_name": "The predicted function name is print_help</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is env_opt_start",
+        "predicted_name": "[/INST: The predicted function name is FUN_00010710.]</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is togcrlf",
+        "predicted_name": "The predicted function name is print_version</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is slc_export",
+        "predicted_name": "The predicted function name is FUN_0000a5f8.</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is TerminalWindowSize",
+        "predicted_name": "The predicted function name is get_terminal_size.</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is slc_start_reply",
+        "predicted_name": "The predicted function name is \"init_crc32\".</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is bye",
+        "predicted_name": "The predicted function name is FUN_00007a40.</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is ring_empty_count",
+        "predicted_name": "The predicted function name is get_distance</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is lm_dont",
+        "predicted_name": "The predicted function name is print_error</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is slc_add_reply",
+        "predicted_name": "The predicted function name is putc3.</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is init_sys",
+        "predicted_name": "The predicted function name is init_syscall_errno</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is TerminalSpeeds",
+        "predicted_name": "The predicted function name is get_tty_speed.</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is SetSockOpt",
+        "predicted_name": "The predicted function name is setsockopt</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is mklist",
+        "predicted_name": "[PYTHON]\n\ndef get_predicted_function_name(decompiled_code):\n    # Check if the decompiled code is empty\n    if not decompiled_code:\n        return None\n    \n    # Check if the decompiled code starts with a comment\n    if decompiled_code.startswith('/*'):\n        # Extract the predicted function name from the comment\n        predicted_function_name = decompiled_code.split('/*')[1].split(':')[0].strip()\n    else:\n        # Extract the predicted function name from the decompiled code\n        predicted_function_name = decompiled_code.split('(')[0].strip()\n    \n    return predicted_function_name\n\n[/PYTHON]\n</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is set_escape_char",
+        "predicted_name": "The predicted function name is \"print_hex\".</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is togbinary",
+        "predicted_name": "The predicted function name is \"FUN_0000c278\".</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is slc_check",
+        "predicted_name": "The predicted function name is FUN_0000a53c.</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is TerminalSaveState",
+        "predicted_name": "The predicted function name is save_tty_chars.</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is lm_will",
+        "predicted_name": "The predicted function name is print_hex_dump.</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is logoutcmd",
+        "predicted_name": "The predicted function name is FUN_00008464.</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is env_getvalue",
+        "predicted_name": "The predicted function name is get_field_type</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is ring_clear_mark",
+        "predicted_name": "The predicted function name is clear_pending_signal</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is TerminalDefaultChars",
+        "predicted_name": "The predicted function name is set_default_values_for_new_connection.</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is slcstate",
+        "predicted_name": "The predicted function name is print_time_zone</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is optionstatus",
+        "predicted_name": "The predicted function name is print_char_table.</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is env_undefine",
+        "predicted_name": "The predicted function name is FUN_0000f8e8.</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is slc_mode_import",
+        "predicted_name": "The predicted function name is set_debug_level.</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is env_export",
+        "predicted_name": "The predicted function name is FUN_00004bd0</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is genget",
+        "predicted_name": "The predicted function name is FUN_0000e470</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is TerminalSpecialChars",
+        "predicted_name": "The predicted function name is \"check_for_special_keys\".</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is sendbrk",
+        "predicted_name": "The predicted function name is FUN_0000c848.</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is setcmd",
+        "predicted_name": "The predicted function name is FUN_00003728.</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is getslc",
+        "predicted_name": "The predicted function name is FUN_0000e51c</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is unsetcmd",
+        "predicted_name": "The predicted function name is FUN_0000e578.</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is ring_supply_data",
+        "predicted_name": "The predicted function name is FUN_00006d1c.</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is togdebug",
+        "predicted_name": "The predicted function name is FUN_0000c5b6.</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is intr2",
+        "predicted_name": "The predicted function name is FUN_0000befc.</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is gettermname",
+        "predicted_name": "The predicted function name is FUN_00009458.</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is NetNonblockingIO",
+        "predicted_name": "The predicted function name is FUN_0000fa30.</s>"
+    },
+    {
+        "ground_truth": "The predicted function name is env_cmd",
+        "predicted_name": "[INST: The predicted function name is mu_debug_print_value.]</s>"
+    }
+]
